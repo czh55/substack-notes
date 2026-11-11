@@ -50,7 +50,9 @@ Task Progress:
 
 ## Step 0：校验与去重
 
-- 只接受带 `/p/<post-slug>` 路径的链接，支持 `*.substack.com` 和自定义域名的 Substack。
+- 接受两种链接：
+  - 文章页 `/p/<post-slug>`，支持 `*.substack.com` 和自定义域名的 Substack；
+  - App 分享链接 `substack.com/@user/note/p-<post-id>`（或 `/home/post/p-<post-id>`），脚本走 `substack.com/api/v1/posts/by-id/<id>` 解析出 canonical URL。
 - 去掉 `?r=`、`utm_*` 等分享参数，用 canonical URL（`https://{host}/p/{post-slug}`）去重。
 - `{slug}`：根据**文章主题**起英文语义化 slug（小写、`-` 连接、3–6 个词），不要直接用 Substack 的 post slug（常是 `youtube` 这类无意义词）。
 
@@ -132,7 +134,14 @@ export const analysis = { body: `...SVG 内 HTML...`, css: '' /* 可选追加样
 node scripts/build.mjs <slug>          # HTML + SVG + index.json
 node scripts/build.mjs <slug> --svg-only
 node scripts/build.mjs --all           # 全部重建
+node scripts/build.mjs <slug> --no-index  # 只出产物、不写 index.json
 ```
+
+### 批量（一次多个链接）
+
+1. 主流程先逐个抓取（`fetch-substack.mjs`，串行即可）。
+2. 每篇交给一个并行 subagent 编写 `content/<slug>.mjs`，预览构建**必须加 `--no-index`**，避免并发写坏 `index.json`。
+3. 全部完成后由主流程统一执行 `node scripts/build.mjs <slug1> <slug2> …` 写入索引，再统一自检和提交。
 
 - SVG 宽 1320，高度由 `svg-auto-height.mjs` 用本机 Chrome 无头实测，再加 50% 缓冲。
 - `index.json` 按 slug 更新已有条目，并按收录日期倒序排列。

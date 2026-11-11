@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="8861" viewBox="0 0 1320 8861">
+  <foreignObject x="0" y="0" width="1320" height="8861">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+*{margin:0;padding:0;box-sizing:border-box}
+.root{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:#1d2733;padding:52px 64px 40px;
+background:#f3f5f7 radial-gradient(circle at 1px 1px,rgba(29,39,51,.06) 1px,transparent 0) 0 0/22px 22px}
+.pub{font-size:14px;letter-spacing:.14em;color:#ff6719;font-weight:800}
+h1{font-family:"Noto Serif SC","Songti SC",serif;font-size:42px;line-height:1.3;font-weight:900;margin:8px 0 6px;color:#1d2733}
+.orig{font-size:15px;color:#7a8490;margin-bottom:14px}
+.tags{margin:6px 0 18px}
+.tag{display:inline-block;padding:4px 12px;border-radius:6px;font-size:13px;font-weight:700;margin:0 8px 6px 0}
+.t-orange{background:#fff1e8;color:#c2410c}.t-teal{background:#e6f4f1;color:#0f766e}.t-slate{background:#e7ebf0;color:#334155}
+.t-blue{background:#e0ecfb;color:#1d4ed8}.t-red{background:#fde8e8;color:#b91c1c}
+.oneline{font-size:19px;line-height:1.75;background:#fff;border-left:5px solid #ff6719;padding:20px 26px;border-radius:0 14px 14px 0;margin-bottom:26px}
+.oneline b{color:#c2410c}
+h2{font-family:"Noto Serif SC","Songti SC",serif;font-size:27px;font-weight:900;color:#1d2733;margin:40px 0 16px;padding-left:14px;border-left:5px solid #0f766e}
+h3{font-size:20px;font-weight:800;color:#1d2733;margin-bottom:10px}
+p{font-size:16px;line-height:1.8;color:#46505c;margin-bottom:8px}
+li{font-size:15.5px;line-height:1.8;color:#46505c;margin-bottom:4px}
+ul,ol{padding-left:22px;margin:6px 0}
+.map{background:#fff;border-radius:18px;padding:30px 32px;box-shadow:0 4px 24px rgba(29,39,51,.06);margin-bottom:22px}
+.flow{display:flex;align-items:stretch;justify-content:space-between;gap:10px}
+.node{flex:1;background:#f6f8fa;border:2px solid #cfd8e3;border-radius:14px;padding:16px 14px;text-align:center}
+.node b{display:block;font-size:17px;color:#1d2733;margin-bottom:6px}
+.node span{font-size:13.5px;color:#5b6672;line-height:1.6;display:block}
+.node.o{background:#fff6f0;border-color:#ffb68a}.node.o b{color:#c2410c}
+.node.g{background:#eef8f6;border-color:#8fd1c4}.node.g b{color:#0f766e}
+.arrow{align-self:center;font-size:24px;color:#9aa5b1;font-weight:700}
+.cap{font-size:14px;color:#7a8490;text-align:center;margin-top:14px}
+.correct{background:#fff;border:2px dashed #ffb68a;border-radius:14px;padding:20px 24px;margin-bottom:12px}
+.correct h3{color:#c2410c}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.card{background:#fff;border-radius:16px;padding:26px 28px;box-shadow:0 4px 22px rgba(29,39,51,.06);border-top:5px solid #0f766e;margin-bottom:18px}
+.card.o{border-top-color:#ff6719}.card.s{border-top-color:#64748b}.card.r{border-top-color:#dc2626}.card.b{border-top-color:#2563eb}
+.lbl{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;color:#7a8490;margin:10px 0 2px}
+.quote{background:#f6f8fa;border-left:4px solid #cbd5e1;padding:10px 14px;border-radius:0 10px 10px 0;font-size:14.5px;color:#5b6672;margin:10px 0}
+.do{background:#eef8f6;border-left:4px solid #0f766e;padding:10px 14px;border-radius:0 10px 10px 0;font-size:15px;color:#134e4a;margin:10px 0}
+.warn{background:#fdf0f0;border-left:4px solid #dc2626;padding:10px 14px;border-radius:0 10px 10px 0;font-size:15px;color:#991b1b;margin:10px 0}
+.edge{background:#fff8eb;border-left:4px solid #f59e0b;padding:10px 14px;border-radius:0 10px 10px 0;font-size:15px;color:#92400e;margin:10px 0}
+.rel{font-size:14px;color:#1d4ed8;background:#eef4fd;padding:8px 12px;border-radius:8px;margin-top:8px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 22px rgba(29,39,51,.06);margin-bottom:18px}
+th{background:#1d2733;color:#fff;font-size:15px;text-align:left;padding:13px 16px;font-weight:700}
+td{font-size:15px;line-height:1.7;color:#46505c;padding:13px 16px;border-bottom:1px solid #e5e9ee;vertical-align:top}
+td b{color:#1d2733}
+tr:nth-child(even) td{background:#fafbfc}
+.lv{display:grid;grid-template-columns:56px 1fr 1.1fr;gap:0;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 22px rgba(29,39,51,.06);margin-bottom:18px}
+.lv div{padding:12px 16px;border-bottom:1px solid #e5e9ee;font-size:15px;line-height:1.65;color:#46505c}
+.lv .n{font-family:"Noto Serif SC",serif;font-weight:900;color:#ff6719;font-size:20px;text-align:center}
+.lv .h{background:#1d2733;color:#fff;font-weight:700}
+.sev{display:inline-block;font-size:12px;font-weight:800;padding:2px 8px;border-radius:5px;margin-left:8px;vertical-align:middle}
+.sev.hi{background:#fde8e8;color:#b91c1c}.sev.md{background:#fff1e8;color:#c2410c}.sev.lo{background:#e7ebf0;color:#475569}
+.end{background:linear-gradient(125deg,#1d2733,#2d3d4d);border-radius:20px;padding:34px 38px;margin-top:40px;color:#fff}
+.end h2{color:#fff;border-left-color:#ff6719;margin-top:0}
+.end h3{color:#ffb68a;margin:20px 0 8px}
+.end p,.end li{color:rgba(255,255,255,.88)}
+.foot{text-align:center;font-size:13px;color:#7a8490;margin-top:26px}
+</style>
+      <div class="root">
+<div class="pub">USE YOUR BRAIN CHN · PRISCILLA HSU · 2026-08-17</div>
+<h1>读完一本书，如何有自己的观点</h1>
+<div class="orig">原标题：讀完一本書，如何有有自己的觀點？ · 理性分析</div>
+<div class="tags"><span class="tag t-orange">方法论</span><span class="tag t-teal">阅读方法</span><span class="tag t-teal">读书笔记</span><span class="tag t-blue">写作</span><span class="tag t-slate">第二大脑</span></div>
+
+<div class="oneline">本文解决的核心问题是：<b>笔记越记越全，为什么读完书仍然只能复述作者，而说不出自己的看法。</b>作者的答案是把顺序倒过来——先有一个眼前的问题，再从书里挑一段去试；观点来自“方法换到我的情况之后发生了什么”，而不是“书里讲了什么”。</div>
+
+<div class="map">
+  <h3>概念关系图：从“整理作者”到“形成观点”</h3>
+  <div class="flow">
+    <div class="node o"><b>常见路径</b><span>心智图 · 笔记 · 第二大脑<br/>照着书的结构读</span></div>
+    <div class="arrow">→</div>
+    <div class="node o"><b>结果</b><span>资料很多，用不上<br/>草稿像缩短版原书</span></div>
+    <div class="arrow">→</div>
+    <div class="node"><b>根因</b><span>方法脱离了作者的情况<br/>“相关”没有具体对象</span></div>
+    <div class="arrow">→</div>
+    <div class="node g"><b>补上的一步</b><span>我现在想解什么问题？<br/>（不必先有答案）</span></div>
+    <div class="arrow">→</div>
+    <div class="node g"><b>试一次</b><span>选一段 → 试 → 留下 / 改掉 / 先放着</span></div>
+  </div>
+  <div class="flow" style="margin-top:14px">
+    <div class="node" style="flex:1"><b>贯穿全程 · 情况比对</b><span>作者有多少时间、资源和限制？想做的事和例子跟我一样吗？</span></div>
+    <div class="node o" style="flex:1.2"><b>最终产物 · 自己的观点</b><span>原本想弄懂什么 · 哪一段改变了想法 · 现在怎么做或还缺什么</span></div>
+  </div>
+  <div class="cap">工具负责“存”和“找”，问题负责“选”；没有问题，笔记再全也只是在存笔记</div>
+</div>
+
+<h2>认知纠偏</h2>
+<div class="grid3">
+  <div class="correct"><h3>误解：想不清楚是因为工具不够好</h3><p>纠偏：作者自己用的就是带 AI 的 wiki。工具能把〈The Algorithm〉标成“工作流程”，却判断不了“删除步骤”对眼前这件工作有没有用。缺的是问题，不是工具。</p></div>
+  <div class="correct"><h3>误解：好方法放之四海皆准</h3><p>纠偏：方法带着作者的目标、资源、限制和例子。效率书默认读者有力气照着做；对正在经历焦虑、抑郁的人，排好行程解决不了根本问题。</p></div>
+  <div class="correct"><h3>误解：摘要写得好就是观点</h3><p>纠偏：摘要帮人决定读不读原书，但回答不了“为什么读你而不读原书”。另注：原标题“如何有有”是笔误，正文与配图不受影响。</p></div>
+</div>
+
+<h2>三个核心概念</h2>
+<div class="grid3">
+  <div class="card">
+    <h3>方法的“情况”</h3>
+    <span class="lbl">解决什么问题</span><p>解释为什么一本好书的方法放到你身上可能不管用。</p>
+    <span class="lbl">关键理解</span><p>作者写方法时带着四样东西：想做的事、时间和资源、限制、例子。书只交代一部分，摘要几乎全删，读者拿到的只剩“方法与结论”。</p>
+    <div class="quote">“方法要在对的情况，才用得上。”</div>
+    <div class="edge">边界：情况不同不等于方法没用——〈The Algorithm〉来自工厂，作者照样把“删除”迁移到了电子报。要做的是比对，而不是一律拒绝。</div>
+    <div class="rel">关联：是“先问问题”的前提——只有带着自己的问题，才看得出两边情况差在哪里。</div>
+  </div>
+  <div class="card b">
+    <h3>“相关”的四个对象</h3>
+    <span class="lbl">解决什么问题</span><p>解释为什么第二大脑越完整，反而越想不清楚。</p>
+    <span class="lbl">关键理解</span><p>标签说明笔记“关于什么”，写作需要知道笔记“为了什么”：哪个项目、哪个决定、哪个问题、哪种情况。四个都答不出，资料库只是在存笔记。</p>
+    <div class="quote">“资料库不知道删除步骤能不能帮我做好眼前的工作。”</div>
+    <div class="edge">边界：这不是否定资料库。作者明确说“资料库有用”，它负责把资料留住、以后找得到；问题在于把“存”误当成了“想”。</div>
+    <div class="rel">关联：四个对象正是“眼前的问题”的具体化，可以直接拿来写第一步。</div>
+  </div>
+  <div class="card o">
+    <h3>以问题为起点的阅读</h3>
+    <span class="lbl">解决什么问题</span><p>照着书读，书会替你决定什么重要、记什么、用什么例子、信什么。</p>
+    <span class="lbl">关键理解</span><p>问题要跟现在的生活或工作有关，不必先有答案，写的过程中可以改。它决定留哪则笔记、放哪个想法、先查清哪个方法。</p>
+    <div class="quote">“你一开始不用有答案。你先有一个问题。”</div>
+    <div class="edge">边界：这套做法面向“读完要用、要写”的书；纯为了理解作者、享受阅读，作者自己也会回到原书完整地读。<span class="sev lo">笔记推导</span></div>
+    <div class="rel">关联：是“选一段 → 试一次”的入口，也是文章三件事里的第一件。</div>
+  </div>
+</div>
+
+<h2>方法：写问题 → 选一段 → 试一次 → 写成文章</h2>
+<table>
+  <tr><th style="width:54px">步</th><th style="width:250px">做什么（原文）</th><th>作者的示范（原文）</th><th style="width:270px">常见失误 <span class="sev lo">笔记推导</span></th></tr>
+  <tr><td><b>1</b></td><td>写下一个眼前的问题：一个决定、一个项目，或一件一直卡住的事</td><td>工作越做越乱；电子报写得太长</td><td>问题太大太虚，比如“怎么提高效率”，没法拿去试</td></tr>
+  <tr><td><b>2</b></td><td>找书里一段能帮你的内容：一段故事、一个方法或一整章</td><td>只取〈The Algorithm〉五步里的前两步，简化成“先问、再删”</td><td>想把整本书都用上，结果哪一段都没用透</td></tr>
+  <tr><td><b>3</b></td><td>拿去试一次，试完决定留下、改掉或先放着</td><td>逐步问“这一步要帮我做什么”，答不出就删；逐段问“这段有没有帮读者看懂”，没有就删</td><td>只在脑中推演，没有真的试；或试完不做“留下 / 改掉 / 先放着”的决定</td></tr>
+  <tr><td><b>4</b></td><td>写成文章：原本想弄懂什么、哪一段改变了想法、现在怎么做或还缺什么</td><td>写“哪个工作变复杂了、怎么用先问再删、试完留下什么做法”，不整理整本书</td><td>又回到按章节复述，把试的过程写成附录</td></tr>
+</table>
+<div class="grid2">
+  <div class="card s">
+    <h3>“先问、再删”的原版与迁移版</h3>
+    <p>原文只展开了五步里的前两步。通常的完整表述是：质疑每个要求 → 删除不必要的部分或流程 → 简化与优化 → 加快周期 → 自动化。<span class="sev lo">笔记推导</span></p>
+    <div class="do">迁移：工厂里删的是零件和工序；作者删的是工作流程里的步骤和电子报里的段落。判断标准不变——“它要帮我做什么？”</div>
+    <div class="edge">边界：五步的顺序本身就是要点——先删再优化，否则是在优化本来不该存在的东西。只学前两步够用，但别跳过它们直接去“提效”。<span class="sev lo">笔记推导</span></div>
+  </div>
+  <div class="card s">
+    <h3>原文依据</h3>
+    <div class="quote">“你照着书写，文章就容易变成摘要。”</div>
+    <div class="quote">“读到最后，你很懂作者怎么想。你还没有问：作者的方法能用在你现在的问题吗？”</div>
+    <div class="quote">“文章写的是我试过后知道的事。”</div>
+  </div>
+</div>
+
+<h2>心法：动手前的情况比对</h2>
+<div class="lv">
+  <div class="h" style="text-align:center">项</div><div class="h">比对什么（原文的四项情况）</div><div class="h">怎么查 <span class="sev lo">笔记推导</span></div>
+  <div class="n">1</div><div><b>想做的事</b>：作者要解决的问题和我的是否同一类</div><div>用一句话分别写下作者的目标和我的目标，放在一起看</div>
+  <div class="n">2</div><div><b>时间和资源</b>：作者有团队、资金、专注时间吗</div><div>列出方法默认需要的资源，逐项打勾我有没有</div>
+  <div class="n">3</div><div><b>限制</b>：作者没有、而我有的限制</div><div>包括精力和身心状态——原文提醒，焦虑或抑郁时排行程无济于事</div>
+  <div class="n">4</div><div><b>例子</b>：书里的例子发生在什么场景</div><div>把例子换成我的场景重讲一遍；讲不通的地方，就是要“改掉”的部分</div>
+</div>
+<div class="grid2">
+  <div class="card o">
+    <h3>为什么比对要放在“试”之前</h3>
+    <p>方法看不出自己需要什么情况，所以看起来人人都能用。先比对，试的时候才知道失败是方法不行，还是情况不同。</p>
+    <div class="quote">“作者有多少时间、资源和限制？你有一样的吗？”</div>
+    <div class="do">配套动作：试完把“哪一项情况不同、因此改了什么”写下来，这就是文章里最有价值的一段。</div>
+  </div>
+  <div class="card r">
+    <h3>适用边界 <span class="sev lo">笔记推导</span></h3>
+    <div class="edge">比对是为了调整，不是为了找理由不做。情况差异只出现在细节上时，先原样试一次，比在脑中反复比对更快得到结论。</div>
+    <div class="warn">心理健康问题不是“改一改效率方法”就能解决的。原文点到为止；真正出现长期失眠、无法专注时，应寻求专业帮助，而不是换一本效率书。</div>
+  </div>
+</div>
+
+<h2>选型：读到这本书，下一步做什么</h2>
+<table>
+  <tr><th style="width:250px">场景</th><th>推荐</th><th>核心理由</th><th>不推荐</th><th>为什么不行</th></tr>
+  <tr><td><b>还不确定要不要读这本书</b></td><td>先看摘要、书评、推荐</td><td>有人先读完整理，帮你决定值不值得花时间（原文）</td><td>直接精读并做全书笔记</td><td>投入在还没确定有用的书上</td></tr>
+  <tr><td><b>想真正懂作者</b></td><td>回到原书</td><td>看哪些内容吸引你、哪些不同意、作者漏掉了什么（原文）</td><td>只靠摘要</td><td>摘要只留重点，背景和推理过程都被删掉</td></tr>
+  <tr><td><b>读完想写一篇自己的文章</b></td><td>写问题 → 选一段 → 试一次，写试后结果</td><td>回答“为什么读你而不读原书”（原文）</td><td>按章节整理全书</td><td>草稿会像缩短版原书</td></tr>
+  <tr><td><b>手上正卡着一个具体问题</b></td><td>只找能帮上忙的那一段或一章</td><td>问题决定留哪则笔记、放哪个想法（原文）</td><td>从第一页开始顺着读</td><td>书会替你决定什么重要</td></tr>
+  <tr><td><b>想把书和自己的知识体系连起来</b> <span class="sev lo">笔记推导</span></td><td>和另一本书对照着读、着写</td><td>原文列出的三种写法之一：跨书对照</td><td>只给笔记打标签</td><td>标签只说明“关于什么”，说明不了“为了什么”</td></tr>
+</table>
+
+<h2>横向对比</h2>
+<table>
+  <tr><th style="width:150px">维度</th><th>摘要 / 书评</th><th>第二大脑 / 资料库</th><th>以问题为起点的读书文章</th></tr>
+  <tr><td><b>回答什么</b></td><td>这本书讲了什么、值不值得读</td><td>我存过什么、在哪里找到</td><td>这个方法放到我的情况下会怎样</td></tr>
+  <tr><td><b>谁在选重点</b></td><td>书的作者（摘要再压缩一次）</td><td>标签与检索</td><td>你眼前的问题</td></tr>
+  <tr><td><b>原文态度</b></td><td>有用，帮人快速认识一本书</td><td>有用，把资料留住</td><td>原书做不了的事</td></tr>
+  <tr><td><b>做不到</b></td><td>替你的文章选重点</td><td>判断哪则笔记能帮眼前的事</td><td>代替完整读原书 <span class="sev lo">笔记推导</span></td></tr>
+  <tr><td><b>产物形态</b></td><td>缩短版原书</td><td>越来越多的相关笔记</td><td>原本想弄懂什么 + 哪一段改变了想法 + 现在怎么做</td></tr>
+</table>
+
+<h2>避坑清单</h2>
+<div class="grid2">
+  <div class="card r"><h3>把“存起来”当成“想清楚”<span class="sev hi">致命</span></h3><p>现象：笔记、心智图、第二大脑都很完整，打开时却不知道哪则能用。</p><p>原因：工具只能存和找，“选”需要一个问题。</p><div class="quote">“我答不出项目、决定、问题和情况时，资料库只是在存笔记。”</div><div class="do">解法：存之前先写一句这则笔记要帮哪个项目、决定、问题或情况。<span class="sev lo">笔记推导</span></div></div>
+  <div class="card r"><h3>照着书的结构写文章<span class="sev hi">致命</span></h3><p>现象：第一段写完，草稿像把书写短了一点。</p><p>原因：题目、重点、例子和结论都是书替你选的。</p><div class="do">解法：只写三件事——原本想弄懂什么、哪一段改变了想法、现在怎么做或还缺什么。</div></div>
+  <div class="card o"><h3>忽略方法背后的情况<span class="sev md">小心</span></h3><p>现象：效率书说早起、排时间、养成习惯，照做却没用。</p><p>原因：书默认你有力气照着做，你的时间、资源和限制可能和作者完全不同。</p><div class="do">解法：动手前按“想做的事、时间和资源、限制、例子”四项比对一次。</div></div>
+  <div class="card o"><h3>以为换个更好的工具就好<span class="sev md">小心</span></h3><p>原因：作者已经在用带 AI 的 wiki，它仍不知道“删除步骤”对眼前的工作有没有用。</p><div class="do">解法：先补问题，再考虑工具；没有问题时，换工具只是换个地方存笔记。</div></div>
+  <div class="card s"><h3>等想出答案才动笔<span class="sev md">小心</span></h3><p>原因：把“有观点”误解为“有结论”。原文说一开始不用有答案，写的时候可以改，也可以先留下不懂的部分。</p><div class="do">解法：把“还要找什么”当成文章合法的结尾。</div></div>
+  <div class="card s"><h3>试完不做决定<span class="sev lo">留意</span><span class="sev lo">笔记推导</span></h3><p>现象：试过很多方法，却说不出留下了什么。</p><div class="do">解法：每次试完只给一个结论：留下、改掉，或先放着，并写一句理由。</div></div>
+</div>
+
+<div class="end">
+  <h2>结论</h2>
+  <h3>总结</h3>
+  <ol>
+    <li>笔记工具负责存和找，选资料只能靠你；照着书写，文章必然接近摘要。</li>
+    <li>书里的方法带着作者的目标、资源、限制和例子，摘要只留下方法和结论，所以要先比对情况。</li>
+    <li>“相关”要落到具体的项目、决定、问题或情况上，否则资料库只是在存笔记。</li>
+    <li>缺的那一步是先问“我现在想解什么问题”，不必先有答案。</li>
+    <li>读书文章的价值在于原书做不了的事：换情况、跨书对照、解释它如何解你的问题。</li>
+  </ol>
+  <h3>行动清单</h3>
+  <ol>
+    <li>打开最近读完的一本书的笔记，先写一句：我现在想解什么问题？</li>
+    <li>从书里只挑一段（一个故事、一个方法或一章），按四项情况和作者比对一次。</li>
+    <li>这周拿它试一次，比如用“先问、再删”逐一审视一个流程的每一步。</li>
+    <li>试完写下结论：留下、改掉还是先放着，以及原因。</li>
+    <li>按“原本想弄懂什么 / 哪一段改变了想法 / 现在怎么做”三段写成一篇短文。</li>
+  </ol>
+  <h3>关键认知转变</h3>
+  <p>从“我要记住书里的每个重点”变成“我只要书里能帮我解眼前问题的那一段”；从“这本书讲了什么”变成“我试过之后知道了什么”。</p>
+</div>
+<div class="foot">原文：useyourbrainchn.substack.com/p/eec · 收录 2026-11-11 · 标注“笔记推导”的内容是本笔记基于作者立场的延伸，不是原文观点</div>
+</div>
+    </div>
+  </foreignObject>
+</svg>

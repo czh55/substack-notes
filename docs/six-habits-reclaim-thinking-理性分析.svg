@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="10226" viewBox="0 0 1320 10226">
+  <foreignObject x="0" y="0" width="1320" height="10226">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+*{margin:0;padding:0;box-sizing:border-box}
+.root{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:#1d2733;padding:52px 64px 40px;
+background:#f3f5f7 radial-gradient(circle at 1px 1px,rgba(29,39,51,.06) 1px,transparent 0) 0 0/22px 22px}
+.pub{font-size:14px;letter-spacing:.14em;color:#ff6719;font-weight:800}
+h1{font-family:"Noto Serif SC","Songti SC",serif;font-size:42px;line-height:1.3;font-weight:900;margin:8px 0 6px;color:#1d2733}
+.orig{font-size:15px;color:#7a8490;margin-bottom:14px}
+.tags{margin:6px 0 18px}
+.tag{display:inline-block;padding:4px 12px;border-radius:6px;font-size:13px;font-weight:700;margin:0 8px 6px 0}
+.t-orange{background:#fff1e8;color:#c2410c}.t-teal{background:#e6f4f1;color:#0f766e}.t-slate{background:#e7ebf0;color:#334155}
+.t-blue{background:#e0ecfb;color:#1d4ed8}.t-red{background:#fde8e8;color:#b91c1c}
+.oneline{font-size:19px;line-height:1.75;background:#fff;border-left:5px solid #ff6719;padding:20px 26px;border-radius:0 14px 14px 0;margin-bottom:26px}
+.oneline b{color:#c2410c}
+h2{font-family:"Noto Serif SC","Songti SC",serif;font-size:27px;font-weight:900;color:#1d2733;margin:40px 0 16px;padding-left:14px;border-left:5px solid #0f766e}
+h3{font-size:20px;font-weight:800;color:#1d2733;margin-bottom:10px}
+p{font-size:16px;line-height:1.8;color:#46505c;margin-bottom:8px}
+li{font-size:15.5px;line-height:1.8;color:#46505c;margin-bottom:4px}
+ul,ol{padding-left:22px;margin:6px 0}
+.map{background:#fff;border-radius:18px;padding:30px 32px;box-shadow:0 4px 24px rgba(29,39,51,.06);margin-bottom:22px}
+.flow{display:flex;align-items:stretch;justify-content:space-between;gap:10px}
+.node{flex:1;background:#f6f8fa;border:2px solid #cfd8e3;border-radius:14px;padding:16px 14px;text-align:center}
+.node b{display:block;font-size:17px;color:#1d2733;margin-bottom:6px}
+.node span{font-size:13.5px;color:#5b6672;line-height:1.6;display:block}
+.node.o{background:#fff6f0;border-color:#ffb68a}.node.o b{color:#c2410c}
+.node.g{background:#eef8f6;border-color:#8fd1c4}.node.g b{color:#0f766e}
+.arrow{align-self:center;font-size:24px;color:#9aa5b1;font-weight:700}
+.cap{font-size:14px;color:#7a8490;text-align:center;margin-top:14px}
+.correct{background:#fff;border:2px dashed #ffb68a;border-radius:14px;padding:20px 24px;margin-bottom:12px}
+.correct h3{color:#c2410c}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.card{background:#fff;border-radius:16px;padding:26px 28px;box-shadow:0 4px 22px rgba(29,39,51,.06);border-top:5px solid #0f766e;margin-bottom:18px}
+.card.o{border-top-color:#ff6719}.card.s{border-top-color:#64748b}.card.r{border-top-color:#dc2626}.card.b{border-top-color:#2563eb}
+.lbl{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;color:#7a8490;margin:10px 0 2px}
+.quote{background:#f6f8fa;border-left:4px solid #cbd5e1;padding:10px 14px;border-radius:0 10px 10px 0;font-size:14.5px;color:#5b6672;margin:10px 0}
+.do{background:#eef8f6;border-left:4px solid #0f766e;padding:10px 14px;border-radius:0 10px 10px 0;font-size:15px;color:#134e4a;margin:10px 0}
+.warn{background:#fdf0f0;border-left:4px solid #dc2626;padding:10px 14px;border-radius:0 10px 10px 0;font-size:15px;color:#991b1b;margin:10px 0}
+.edge{background:#fff8eb;border-left:4px solid #f59e0b;padding:10px 14px;border-radius:0 10px 10px 0;font-size:15px;color:#92400e;margin:10px 0}
+.rel{font-size:14px;color:#1d4ed8;background:#eef4fd;padding:8px 12px;border-radius:8px;margin-top:8px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 22px rgba(29,39,51,.06);margin-bottom:18px}
+th{background:#1d2733;color:#fff;font-size:15px;text-align:left;padding:13px 16px;font-weight:700}
+td{font-size:15px;line-height:1.7;color:#46505c;padding:13px 16px;border-bottom:1px solid #e5e9ee;vertical-align:top}
+td b{color:#1d2733}
+tr:nth-child(even) td{background:#fafbfc}
+.lv{display:grid;grid-template-columns:56px 1fr 1.1fr;gap:0;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 22px rgba(29,39,51,.06);margin-bottom:18px}
+.lv div{padding:12px 16px;border-bottom:1px solid #e5e9ee;font-size:15px;line-height:1.65;color:#46505c}
+.lv .n{font-family:"Noto Serif SC",serif;font-weight:900;color:#ff6719;font-size:20px;text-align:center}
+.lv .h{background:#1d2733;color:#fff;font-weight:700}
+.sev{display:inline-block;font-size:12px;font-weight:800;padding:2px 8px;border-radius:5px;margin-left:8px;vertical-align:middle}
+.sev.hi{background:#fde8e8;color:#b91c1c}.sev.md{background:#fff1e8;color:#c2410c}.sev.lo{background:#e7ebf0;color:#475569}
+.end{background:linear-gradient(125deg,#1d2733,#2d3d4d);border-radius:20px;padding:34px 38px;margin-top:40px;color:#fff}
+.end h2{color:#fff;border-left-color:#ff6719;margin-top:0}
+.end h3{color:#ffb68a;margin:20px 0 8px}
+.end p,.end li{color:rgba(255,255,255,.88)}
+.foot{text-align:center;font-size:13px;color:#7a8490;margin-top:26px}
+</style>
+      <div class="root">
+<div class="pub">USE YOUR BRAIN CHN · PRISCILLA HSU · 2026-06-15</div>
+<h1>拿回思考力的六个习惯：按顺序练，附六道自检题</h1>
+<div class="orig">原标题：如何重新拿回你的思考力：6 個習慣（照順序做，附 6 題自檢） · 理性分析</div>
+<div class="tags"><span class="tag t-orange">方法论</span><span class="tag t-teal">思考习惯</span><span class="tag t-teal">元认知</span><span class="tag t-blue">学习方法</span><span class="tag t-slate">决策</span></div>
+
+<div class="oneline">本文解决的核心问题是：<b>为什么读得多却想不深、用不出，以及怎样按顺序把负责慢思考的“系统二”叫醒。</b>作者的答案是一条六环链——先清情绪、再腾空间、再验前提、再定把握、再接网络、最后用输出检验；哪一环断了，后面都接不上。</div>
+
+<div class="map">
+  <h3>概念关系图：六个习惯是一条前后依赖的链</h3>
+  <div class="flow">
+    <div class="node o"><b>① 换标签</b><span>焦虑 → 在乎<br/>情绪离开方向盘</span></div>
+    <div class="arrow">→</div>
+    <div class="node"><b>② 写下来</b><span>工作记忆只放三四件<br/>把“记住”交给纸</span></div>
+    <div class="arrow">→</div>
+    <div class="node"><b>③ 质疑前提</b><span>这是谁说的？为什么？<br/>资深者的要求最危险</span></div>
+    <div class="arrow">→</div>
+    <div class="node g"><b>④ 几成把握</b><span>七成 = 还有三成要补<br/>不被结果绑架</span></div>
+    <div class="arrow">→</div>
+    <div class="node g"><b>⑤ 接起来</b><span>记忆是网不是仓库<br/>编码到已知事物上</span></div>
+    <div class="arrow">→</div>
+    <div class="node g"><b>⑥ 讲出来</b><span>费曼找洞<br/>整体—局部—整体搭结构</span></div>
+  </div>
+  <div class="flow" style="margin-top:14px">
+    <div class="node o" style="flex:1"><b>前三环 · 清场</b><span>处理“阻碍思考的东西”：情绪、记忆负担、错误的题目</span></div>
+    <div class="node g" style="flex:1"><b>后三环 · 加工</b><span>处理“思考本身”：承认不确定 → 补洞 → 用输出验证</span></div>
+    <div class="node" style="flex:1"><b>贯穿全程 · 对手</b><span>快系统制造的“顺滑感”：抓第一个答案、整齐笔记、看着眼熟</span></div>
+  </div>
+  <div class="cap">链条的依赖关系是作者明确写出的：情绪稳 → 写得下 → 看得清 → 肯承认 → 去重组 → 讲得出；“清场 / 加工”的分组是本笔记的归纳 <span class="sev lo">笔者推导</span></div>
+</div>
+
+<h2>认知纠偏</h2>
+<div class="grid3">
+  <div class="correct"><h3>误解：想不清是因为不够聪明或不够努力</h3><p>纠偏：作者认为问题在于慢系统没被叫醒，而且常常是链条前段断了——焦虑没处理、脑子超载，就不可能进入后面的质疑与重组。先查顺序，再怪自己。</p></div>
+  <div class="correct"><h3>误解：笔记越整齐，学得越好</h3><p>纠偏：整齐是“收好了”，不是“学会了”。没有和已知事物建立联系的笔记只是在积灰，整齐反而喂给你“我学会了”的错觉。</p></div>
+  <div class="correct"><h3>误解：看得顺就是懂了</h3><p>纠偏：熟悉感是快系统给的。检验标准是不用专有名词讲给外行人听，卡住的地方就是漏洞。</p></div>
+</div>
+<div class="grid2">
+  <div class="correct"><h3>原文表述需要打折的地方</h3><p>“焦虑和兴奋是同一回事”是简化：两者生理唤醒相近而非等同；Brooks 2014 的“说我很兴奋”实验是单篇研究，可以试，不宜当定律。“情绪上来，理性脑区把方向盘交给逃命脑区”也是通俗比喻。</p></div>
+  <div class="correct"><h3>注释与图文的小出入</h3><p>resulting 是扑克圈行话，Annie Duke 借用并推广，并非她首创；“编码”总会发生，被跳过的是深度编码；开篇引导语写“五个界线、五个问题”，正文却是六个；习惯五的配图把“堆叠”标成 REORGANIZE，与标题里“重组 = 连接”的用法相反。</p></div>
+</div>
+
+<h2>四个核心概念</h2>
+<div class="grid2">
+  <div class="card">
+    <h3>系统一 / 系统二（卡尼曼）</h3>
+    <span class="lbl">解决什么问题</span><p>解释“明明花了时间却停在浅处”：大部分时候是快系统在自动反射，慢系统懒得上线。</p>
+    <span class="lbl">关键理解</span><p>思考不是默认状态，而是要“叫醒”的；而且叫醒有前提条件——情绪平稳、工作记忆有余量。这是整条链为什么要排序的理论地基。</p>
+    <div class="edge">边界：快系统并不是敌人，熟练领域里的直觉判断又快又准。要警惕的是在需要推理的问题上让快系统冒充思考。<span class="sev lo">笔者推导</span></div>
+    <div class="rel">关联：习惯一、二给慢系统清场；习惯六专门对付快系统制造的熟悉感。</div>
+  </div>
+  <div class="card o">
+    <h3>重新解读（reappraisal）</h3>
+    <span class="lbl">解决什么问题</span><p>焦虑越压越反弹，“叫自己冷静”往往无效。</p>
+    <span class="lbl">关键理解</span><p>不去消灭身体的唤醒，只换解释：从“我好紧张”换成“我很在乎、我在期待”。原文依据是 Brooks 2014 年实验：说“我很兴奋”的一组上台表现更好。</p>
+    <div class="edge">边界：适用于“上台、考试、截止日”这类有明确对象的表现焦虑；长期、弥散、影响生活的焦虑属于另一回事，换标签解决不了，需要专业帮助。<span class="sev lo">笔者推导</span></div>
+    <div class="rel">关联：链条第一环；作者提醒要反复讲很多次，大脑才会把新路走顺。</div>
+  </div>
+  <div class="card b">
+    <h3>需求溯源（马斯克第一步）</h3>
+    <span class="lbl">解决什么问题</span><p>把一个本不该存在的需求做得又精致又漂亮——作者自己付过几个星期的学费。</p>
+    <span class="lbl">关键理解</span><p>每个要求追到一个具体的人，问“为什么”。分量越重的人给的要求越危险，因为你根本不会想去顶。</p>
+    <div class="quote">“最危险的，是聪明人、资深的人给的要求。”</div>
+    <div class="edge">边界：溯源的目的是砍掉站不住的前提，不是把所有要求都推翻；追到人、拿到理由后，站得住的就该全力去做。</div>
+    <div class="rel">关联：必须排在“写下来”之后——前提没摊到纸上，你连它长什么样都看不见。</div>
+  </div>
+  <div class="card s">
+    <h3>编码与知识网络</h3>
+    <span class="lbl">解决什么问题</span><p>整理笔记很有成就感，真正学到的却很少。</p>
+    <span class="lbl">关键理解</span><p>记忆是网不是仓库：新概念要勾住已知事物、再用自己的话讲一遍才算进了脑子。原文依据是 Craik 与 Lockhart 的加工层次理论。</p>
+    <div class="edge">边界：作者自己就是反例的另一端——太会往深里拆，改了二十几个版本却一场都没办成。连接要服务于输出，不能变成新的囤积。</div>
+    <div class="rel">关联：习惯四找出“缺的那几成”，习惯五负责补；习惯六检验补得对不对。</div>
+  </div>
+</div>
+
+<h2>方法：六个习惯按顺序执行</h2>
+<table>
+  <tr><th style="width:120px">习惯</th><th style="width:250px">今天可以做的（原文）</th><th>为什么排在这里（原文逻辑）</th><th style="width:250px">常见失误 <span class="sev lo">笔者推导</span></th></tr>
+  <tr><td><b>① 换标签</b></td><td>焦虑上来时不说“冷静”，改说“我不是怕，我是在乎这件事”</td><td>情绪上头时慢系统会松手，不先处理情绪，后面全部白搭</td><td>只说一次就觉得没用；作者强调要讲很多次</td></tr>
+  <tr><td><b>② 写下来</b></td><td>把脑子里转了一整天的事写成三行字，不管好坏</td><td>工作记忆只放得下三四件，腾出空间才能想一件事</td><td>一边写一边修辞，写成了作文</td></tr>
+  <tr><td><b>③ 质疑前提</b></td><td>把“本来就该这样”的前提写成一句话，问：谁说的？为什么？是不是因为他够资深我才没质疑？</td><td>摊在纸上才看得见假设；先确认题目对，再解题</td><td>追到“公司”“大家”就停下，没追到具体的人</td></tr>
+  <tr><td><b>④ 几成把握</b></td><td>把假装有答案的问题改写成“我大概有几成把握，因为……”</td><td>题目对了，接下来要防的是抓住第一个答案就收工</td><td>拿“七成”当口头禅，却没写出“因为……”和剩下三成是什么</td></tr>
+  <tr><td><b>⑤ 接起来</b></td><td>拿两则看似无关的笔记，写一句话说明它们的关系</td><td>承认缺几成之后，才知道要补什么、往哪里接</td><td>把“建双链、做标签”当成连接，没有用自己的话写出关系</td></tr>
+  <tr><td><b>⑥ 讲出来</b></td><td>用费曼的方式把今天学的一件事讲给外行人听，记下卡住的点</td><td>重组完会“以为懂了”，需要一个能当场戳破的测试</td><td>卡住时塞一个专有名词蒙混过去——这正是原文说的“盖住缺口”</td></tr>
+</table>
+
+<h2>心法：六道自检题怎么用</h2>
+<div class="lv">
+  <div class="h" style="text-align:center">题</div><div class="h">自检问题（原文）</div><div class="h">答“否”时的信号与下一步 <span class="sev lo">笔者推导</span></div>
+  <div class="n">1</div><div><b>我是被焦虑牵着走，还是给它换了个标签？</b></div><div>信号：反复刷手机、急着要结论。下一步：先说一句“我在乎这件事”，再坐下来</div>
+  <div class="n">2</div><div><b>我把它写出来了吗，还是只在脑袋里转？</b></div><div>信号：同一件事想了一天，说不出具体卡在哪。下一步：三行字写出来</div>
+  <div class="n">3</div><div><b>我有没有质疑这道题的假设，追问它是谁出的？</b></div><div>信号：说不出这个任务“为什么要做”。下一步：找到提出者，要一个理由</div>
+  <div class="n">4</div><div><b>我是真的想清楚了，还是抓了第一个答案？</b></div><div>信号：别人一质疑就想辩护。下一步：给答案标一个把握度，列出剩下几成的缺口</div>
+  <div class="n">5</div><div><b>我把它接到已经知道的东西上了吗？</b></div><div>信号：笔记很整齐，却举不出一个自己的例子。下一步：写一句“它和我已知的 X 有什么关系”</div>
+  <div class="n">6</div><div><b>我讲得出来给一个外行人听吗？</b></div><div>信号：一开口就想翻书或用术语。下一步：卡住的点就是回到第 4、5 题补的地方</div>
+</div>
+<div class="grid2">
+  <div class="card o">
+    <h3>使用顺序：从第 1 题往下查</h3>
+    <p>作者的原意是“回头看一眼顺序，破口常常就藏在那里”。所以自检不是挑最顺眼的那题，而是从第 1 题往下，找到第一个答“否”的题，就从那一环重新开始。</p>
+    <div class="quote">“中间哪一环断了，后面就接不上。”</div>
+    <div class="do">落地：把六道题存成手机备忘录或贴在桌前；每次卡住超过 15 分钟就过一遍。<span class="sev lo">笔者推导</span></div>
+  </div>
+  <div class="card r">
+    <h3>适用边界 <span class="sev lo">笔者推导</span></h3>
+    <div class="edge">这条链适合“需要想清楚”的问题：学新概念、做决定、写东西。纯执行型任务（回邮件、照流程操作）没必要逐题过一遍，否则自检本身会变成新的拖延。</div>
+    <div class="warn">链条是线性的，真实思考常会回环：讲出来时发现漏洞（⑥），往往要回到④⑤，甚至重新质疑题目（③）。把它当检查清单，而不是只走一遍的流水线。</div>
+  </div>
+</div>
+
+<h2>选型：卡住时从哪一环入手</h2>
+<table>
+  <tr><th style="width:250px">卡住的症状</th><th style="width:150px">先做哪一环</th><th>理由（对应原文）</th><th style="width:170px">不推荐</th><th>为什么不行</th></tr>
+  <tr><td><b>心慌、坐不住，一直想“万一做不好”</b></td><td>① 换标签</td><td>情绪在握方向盘，慢系统上不来</td><td>直接硬啃难题</td><td>原文：情绪上来时谁都想不清楚</td></tr>
+  <tr><td><b>脑子很满，坐下来却什么都捞不出</b></td><td>② 写下来</td><td>工作记忆超载，不是“想太多”</td><td>再去读一本书</td><td>往超载的脑子里继续塞，只会更卡</td></tr>
+  <tr><td><b>做了很久，越做越觉得方向不对</b></td><td>③ 质疑前提</td><td>可能在精致地完成一个不该存在的需求</td><td>继续优化细节</td><td>原文：把不该存在的东西做得又细又满</td></tr>
+  <tr><td><b>迟迟不敢动，总觉得还需要更多信息</b></td><td>④ 几成把握</td><td>作者本人的毛病：准备两个多星期，其实是不想承认该动了</td><td>再买一门课</td><td>收集信息成了逃避开始的方式</td></tr>
+  <tr><td><b>笔记很多，用的时候想不起来</b></td><td>⑤ 接起来</td><td>存进去不等于编码进去</td><td>再优化笔记系统</td><td>整齐只会加深“我学会了”的错觉</td></tr>
+  <tr><td><b>自认为懂了，一被追问就说不清</b></td><td>⑥ 讲出来</td><td>熟悉感冒充理解</td><td>再读一遍</td><td>重读只会更熟悉，不会暴露漏洞</td></tr>
+</table>
+
+<h2>横向对比</h2>
+<table>
+  <tr><th style="width:150px">维度</th><th>用“对或错”想</th><th>用“几成把握”想</th></tr>
+  <tr><td><b>得出答案后</b></td><td>觉得自己对了就停手，回头护着答案</td><td>还有三成是活的，继续看、继续修</td></tr>
+  <tr><td><b>结果不好时</b></td><td>推翻整个决定（resulting），一两次就吓破胆</td><td>区分“决定质量”和“运气”：七成的选择也可能碰上那三成</td></tr>
+  <tr><td><b>下一步</b></td><td>对错不告诉你往哪走</td><td>剩下那几成就是要补的洞</td></tr>
+  <tr><td><b>行动时机</b></td><td>苦等百分之百才动</td><td>被推翻是意料中的事，没完全确定也敢先动</td></tr>
+</table>
+<table>
+  <tr><th style="width:150px">维度</th><th>费曼技巧</th><th>整体—局部—整体</th><th>一句话结论</th></tr>
+  <tr><td><b>方向</b></td><td>往深处钻</td><td>往广处铺</td><td rowspan="4">作者建议先用“整体—局部—整体”铺好脉络，再用费曼往下钻找洞：一个保证结构，一个保证深度。</td></tr>
+  <tr><td><b>负责什么</b></td><td>找出“以为懂、其实没接上”的破洞</td><td>让每块细节各就各位</td></tr>
+  <tr><td><b>操作</b></td><td>讲给没背景的人，不准用专有名词，卡住处就是洞</td><td>先讲整体与价值 → 拆细节 → 退回整体接回大图</td></tr>
+  <tr><td><b>少了它会怎样</b></td><td>结构漂亮，但里面有含糊带过的空洞</td><td>开头少整体，细节没处挂；结尾少整体，只剩一堆零件</td></tr>
+</table>
+
+<h2>避坑清单</h2>
+<div class="grid2">
+  <div class="card r"><h3>把一个不该存在的需求做到完美<span class="sev hi">致命</span></h3><p>现象：埋头几个月，把需求做得又精致又漂亮，最后发现它根本不该存在。</p><p>原因：要求来自聪明、资深的人，分量太重，你从没想过去顶。</p><div class="quote">“我很拼，那股拼劲却全砸在一个不该存在的东西上。”</div><div class="do">解法：动手前把前提写成一句话，追到具体的人，要一个理由；给不出理由的就砍掉。</div></div>
+  <div class="card r"><h3>用准备代替开始<span class="sev hi">致命</span></h3><p>现象：一卡住就买下一门课、翻开下一本书，为还没开始的事准备两个多星期。</p><p>原因：不想承认“我还没想清楚”，于是用“需要更多信息”包装逃避。</p><div class="do">解法：写下“我大概有几成把握，因为……”，然后只去补剩下那几成里最大的一块。</div></div>
+  <div class="card o"><h3>把整齐的笔记当成学会<span class="sev md">小心</span></h3><p>原因：整理很有成就感，但没有和已知事物建立联系，只是“收好了”。</p><div class="do">解法：每存一则笔记，强制写一句“它和我已知的什么有关”。</div></div>
+  <div class="card o"><h3>被结果绑架（resulting）<span class="sev md">小心</span></h3><p>原因：用一次坏结果否定当初的决定，从此不敢再出手。</p><div class="do">解法：复盘时分开问两件事——当时的信息下这是不是好决定？这次是不是刚好碰上那三成？</div></div>
+  <div class="card s"><h3>拆得太深，迟迟不输出<span class="sev md">小心</span></h3><p>现象：作者自曝改了二十几个版本，一场都还没真正办成。</p><p>原因：“想深”的肌肉跑在前面，把“做出来、讲出去”甩在后面。</p><div class="do">解法：把习惯六当截止线——能讲给外行人听了，就先发布或先办一场，再迭代。<span class="sev lo">笔者推导</span></div></div>
+  <div class="card s"><h3>把“换标签”当万能药<span class="sev lo">留意</span><span class="sev lo">笔者推导</span></h3><p>原因：原文依据是单篇实验，场景是上台前的表现焦虑。</p><div class="do">解法：把它用在有明确对象的紧张上；长期焦虑应寻求专业帮助，而不是靠反复自我暗示硬扛。</div></div>
+</div>
+
+<div class="end">
+  <h2>结论</h2>
+  <h3>总结</h3>
+  <ol>
+    <li>读得多却想不深，是因为快系统在冒充思考，负责慢思考的系统二没被叫醒。</li>
+    <li>叫醒它有顺序：先清场（情绪、记忆负担、错误前提），再加工（承认不确定、接成网络、讲出来）。</li>
+    <li>最危险的前提来自聪明、资深的人；最危险的错觉来自整齐的笔记和顺滑的熟悉感。</li>
+    <li>“几成把握”比“对或错”更好用：它让你继续修正、不被结果绑架，还直接指出下一步。</li>
+    <li>卡住时不怪自己，从第 1 道自检题往下查，第一个答“否”的地方就是断点。</li>
+  </ol>
+  <h3>行动清单</h3>
+  <ol>
+    <li>把六道自检题存进手机备忘录，下次卡住时从第 1 题往下过。</li>
+    <li>今天就把脑子里转得最久的一件事写成三行字。</li>
+    <li>挑一件“本来就该这样”的工作，追问三个问题：谁说的？为什么？是不是因为他资深我才没问？</li>
+    <li>把一个你假装有答案的问题改写成“我大概有几成把握，因为……”，并写出剩下的缺口。</li>
+    <li>晚上用不带术语的话，把今天学的一件事讲给家人或朋友听，记下卡住的点。</li>
+  </ol>
+  <h3>关键认知转变</h3>
+  <p>从“我不够聪明、不够努力”变成“我的链条在哪一环断了”；从“存下来就是学到”变成“接上、讲得出才算学到”；从“等想清楚再动”变成“有七成把握就先动，剩下三成边做边补”。</p>
+</div>
+<div class="foot">原文：useyourbrainchn.substack.com/p/6 · 收录 2026-11-11 · 标注“笔者推导”的内容是本笔记基于作者立场的延伸，不是原文观点</div>
+</div>
+    </div>
+  </foreignObject>
+</svg>

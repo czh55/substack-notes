@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="9825" viewBox="0 0 1320 9825">
+  <foreignObject x="0" y="0" width="1320" height="9825">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+*{margin:0;padding:0;box-sizing:border-box}
+.root{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:#1d2733;padding:52px 64px 40px;
+background:#f3f5f7 radial-gradient(circle at 1px 1px,rgba(29,39,51,.06) 1px,transparent 0) 0 0/22px 22px}
+.pub{font-size:14px;letter-spacing:.14em;color:#ff6719;font-weight:800}
+h1{font-family:"Noto Serif SC","Songti SC",serif;font-size:42px;line-height:1.3;font-weight:900;margin:8px 0 6px;color:#1d2733}
+.orig{font-size:15px;color:#7a8490;margin-bottom:14px}
+.tags{margin:6px 0 18px}
+.tag{display:inline-block;padding:4px 12px;border-radius:6px;font-size:13px;font-weight:700;margin:0 8px 6px 0}
+.t-orange{background:#fff1e8;color:#c2410c}.t-teal{background:#e6f4f1;color:#0f766e}.t-slate{background:#e7ebf0;color:#334155}
+.t-blue{background:#e0ecfb;color:#1d4ed8}.t-red{background:#fde8e8;color:#b91c1c}
+.oneline{font-size:19px;line-height:1.75;background:#fff;border-left:5px solid #ff6719;padding:20px 26px;border-radius:0 14px 14px 0;margin-bottom:26px}
+.oneline b{color:#c2410c}
+h2{font-family:"Noto Serif SC","Songti SC",serif;font-size:27px;font-weight:900;color:#1d2733;margin:40px 0 16px;padding-left:14px;border-left:5px solid #0f766e}
+h3{font-size:20px;font-weight:800;color:#1d2733;margin-bottom:10px}
+p{font-size:16px;line-height:1.8;color:#46505c;margin-bottom:8px}
+li{font-size:15.5px;line-height:1.8;color:#46505c;margin-bottom:4px}
+ul,ol{padding-left:22px;margin:6px 0}
+.map{background:#fff;border-radius:18px;padding:30px 32px;box-shadow:0 4px 24px rgba(29,39,51,.06);margin-bottom:22px}
+.flow{display:flex;align-items:stretch;justify-content:space-between;gap:10px}
+.node{flex:1;background:#f6f8fa;border:2px solid #cfd8e3;border-radius:14px;padding:16px 14px;text-align:center}
+.node b{display:block;font-size:17px;color:#1d2733;margin-bottom:6px}
+.node span{font-size:13.5px;color:#5b6672;line-height:1.6;display:block}
+.node.o{background:#fff6f0;border-color:#ffb68a}.node.o b{color:#c2410c}
+.node.g{background:#eef8f6;border-color:#8fd1c4}.node.g b{color:#0f766e}
+.arrow{align-self:center;font-size:24px;color:#9aa5b1;font-weight:700}
+.cap{font-size:14px;color:#7a8490;text-align:center;margin-top:14px}
+.correct{background:#fff;border:2px dashed #ffb68a;border-radius:14px;padding:20px 24px;margin-bottom:12px}
+.correct h3{color:#c2410c}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.card{background:#fff;border-radius:16px;padding:26px 28px;box-shadow:0 4px 22px rgba(29,39,51,.06);border-top:5px solid #0f766e;margin-bottom:18px}
+.card.o{border-top-color:#ff6719}.card.s{border-top-color:#64748b}.card.r{border-top-color:#dc2626}.card.b{border-top-color:#2563eb}
+.lbl{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;color:#7a8490;margin:10px 0 2px}
+.quote{background:#f6f8fa;border-left:4px solid #cbd5e1;padding:10px 14px;border-radius:0 10px 10px 0;font-size:14.5px;color:#5b6672;margin:10px 0}
+.do{background:#eef8f6;border-left:4px solid #0f766e;padding:10px 14px;border-radius:0 10px 10px 0;font-size:15px;color:#134e4a;margin:10px 0}
+.warn{background:#fdf0f0;border-left:4px solid #dc2626;padding:10px 14px;border-radius:0 10px 10px 0;font-size:15px;color:#991b1b;margin:10px 0}
+.edge{background:#fff8eb;border-left:4px solid #f59e0b;padding:10px 14px;border-radius:0 10px 10px 0;font-size:15px;color:#92400e;margin:10px 0}
+.rel{font-size:14px;color:#1d4ed8;background:#eef4fd;padding:8px 12px;border-radius:8px;margin-top:8px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 22px rgba(29,39,51,.06);margin-bottom:18px}
+th{background:#1d2733;color:#fff;font-size:15px;text-align:left;padding:13px 16px;font-weight:700}
+td{font-size:15px;line-height:1.7;color:#46505c;padding:13px 16px;border-bottom:1px solid #e5e9ee;vertical-align:top}
+td b{color:#1d2733}
+tr:nth-child(even) td{background:#fafbfc}
+.lv{display:grid;grid-template-columns:56px 1fr 1.1fr;gap:0;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 22px rgba(29,39,51,.06);margin-bottom:18px}
+.lv div{padding:12px 16px;border-bottom:1px solid #e5e9ee;font-size:15px;line-height:1.65;color:#46505c}
+.lv .n{font-family:"Noto Serif SC",serif;font-weight:900;color:#ff6719;font-size:20px;text-align:center}
+.lv .h{background:#1d2733;color:#fff;font-weight:700}
+.sev{display:inline-block;font-size:12px;font-weight:800;padding:2px 8px;border-radius:5px;margin-left:8px;vertical-align:middle}
+.sev.hi{background:#fde8e8;color:#b91c1c}.sev.md{background:#fff1e8;color:#c2410c}.sev.lo{background:#e7ebf0;color:#475569}
+.end{background:linear-gradient(125deg,#1d2733,#2d3d4d);border-radius:20px;padding:34px 38px;margin-top:40px;color:#fff}
+.end h2{color:#fff;border-left-color:#ff6719;margin-top:0}
+.end h3{color:#ffb68a;margin:20px 0 8px}
+.end p,.end li{color:rgba(255,255,255,.88)}
+.foot{text-align:center;font-size:13px;color:#7a8490;margin-top:26px}
+</style>
+      <div class="root">
+<div class="pub">USE YOUR BRAIN CHN · PRISCILLA HSU · 2026-05-11</div>
+<h1>用五个问题，把读过的信息变成自己的判断</h1>
+<div class="orig">原标题：用 5 個問題，把任何資訊變成你能用的思考 · 理性分析</div>
+<div class="tags"><span class="tag t-orange">方法论</span><span class="tag t-teal">学习方法</span><span class="tag t-teal">提取练习</span><span class="tag t-blue">思考框架</span><span class="tag t-slate">AI 判断力</span></div>
+
+<div class="oneline">本文解决的核心问题是：<b>为什么读了很多、记了很多，真要表态时却说不出观点，以及怎样让吸收的内容变成可调用的判断。</b>作者的答案是两件事——读之前用“问题、主张、证据、反方观点、应用”五格夺回理解顺序；读之后合上笔记、用五句话讲清楚，用提取代替重读来检验是否学会。</div>
+
+<div class="map">
+  <h3>概念关系图：从“读过”到“能用”</h3>
+  <div class="flow">
+    <div class="node o"><b>跟随素材顺序</b><span>打开 → 照顺序读<br/>→ 画线 → 存笔记</span></div>
+    <div class="arrow">→</div>
+    <div class="node o"><b>熟悉感</b><span>重读、画线很顺<br/>“我懂了”的错觉</span></div>
+    <div class="arrow">→</div>
+    <div class="node o"><b>脆弱知识</b><span>像临时布景的家具<br/>一用就散</span></div>
+    <div class="arrow">→</div>
+    <div class="node o"><b>压力下提取失败</b><span>工作记忆超载<br/>AI 成为拐杖</span></div>
+  </div>
+  <div class="flow" style="margin-top:14px">
+    <div class="node g"><b>先写问题</b><span>“我到底想理解什么？”<br/>不必完美，只要目标</span></div>
+    <div class="arrow">→</div>
+    <div class="node g"><b>五格分类阅读</b><span>问题 · 主张 · 证据<br/>反方观点 · 应用</span></div>
+    <div class="arrow">→</div>
+    <div class="node g"><b>合上笔记提取</b><span>五句话讲清楚<br/>理想困难</span></div>
+    <div class="arrow">→</div>
+    <div class="node g"><b>耐用知识</b><span>可迁移、可评估<br/>AI 成为倍增器</span></div>
+  </div>
+  <div class="cap">上排是作者的旧流程，下排是新流程：同样的时间，差别在顺序由谁决定，以及最后有没有“自己扛一次重量”</div>
+</div>
+
+<h2>认知纠偏</h2>
+<div class="grid3">
+  <div class="correct"><h3>误解：笔记多、重点全就是学到了</h3><p>纠偏：笔记证明的是“花过时间”，不是“懂了”。原文的检验只有一条：关掉文章、收好笔记之后，还能不能用这个想法。</p></div>
+  <div class="correct"><h3>误解：记不住是记性或笔记系统的问题</h3><p>纠偏：作者起初也怪记忆力，后来发现病根在顺序——素材的顺序悄悄变成了你的思考顺序。换更好的笔记软件解决不了这个问题。</p></div>
+  <div class="correct"><h3>误解：学得顺才是学得好</h3><p>纠偏：顺是因为素材替你扛了重量。卡住、讲不出来、想翻笔记的那一刻，才是学习发生的地方。</p></div>
+</div>
+<div class="grid2">
+  <div class="correct"><h3>事实核查：知识半衰期那组数字 <span class="sev lo">笔者推导</span></h3><p>原文写“1930 年学位知识半衰期 35 年，1960 年代 10 年，现在 2.5 到 5 年”，归到 Arbesman 名下但未给出处。这组数字流传版本多指“工程学位”，原始来源难以核实，宜当粗略印象，不宜当测量结果引用；作者“表层事实贬值快”的论点不依赖这组精确数字。</p></div>
+  <div class="correct"><h3>事实核查：术语与实验细节 <span class="sev lo">笔者推导</span></h3><p>Bjork 的标准术语是“理想困难”；“不受欢迎的轻松”更像作者的转述。Roediger 与 Karpicke 的实验中，5 分钟后测试重读组略好，两天和一周后提取组才胜出——这反而强化了“当下顺 ≠ 长期记得住”的结论。</p></div>
+</div>
+
+<h2>三个核心概念</h2>
+<div class="grid3">
+  <div class="card o">
+    <h3>脆弱知识 vs 耐用知识</h3>
+    <span class="lbl">核心机制</span><p>脆弱知识是“因为看过而熟悉”的信息，只能辨认、不能调用；耐用知识能在压力下、在新场景、不看素材时用出来。</p>
+    <span class="lbl">关键理解</span><p>区别不在信息量，而在底层有没有结构。原文的比喻：临时布景的家具让房间看起来完整，但你从没搬进去。</p>
+    <div class="quote">“看见一个想法感觉很好。拥有它则需要努力。”</div>
+    <div class="edge">边界：并非所有信息都值得变成耐用知识。查得到、用一次的事实（参数、日期）留在笔记里就够了，该花力气的是要靠它做判断的领域。<span class="sev lo">笔者推导</span></div>
+    <div class="rel">关联：脆弱知识让 AI 成为拐杖，耐用知识让 AI 成为倍增器。</div>
+  </div>
+  <div class="card s">
+    <h3>熟悉感错觉</h3>
+    <span class="lbl">核心机制</span><p>重读、画线、整理笔记时素材越来越眼熟，大脑把“认得出”误当成“想得起”。</p>
+    <span class="lbl">关键理解</span><p>这是陷阱难以察觉的原因：做的时候它感觉像进步。原文引 Bjork 说明：当下表现好，却很少留下以后能用的东西；再引 Sweller 说明：工作记忆容量小，没进长期记忆的内容在压力下提取不出来。</p>
+    <div class="edge">边界：熟悉感本身不坏，它是快速筛选和复习的入口；问题出在把它当成学完的信号。<span class="sev lo">笔者推导</span></div>
+    <div class="rel">关联：它解释了为什么“更多轻松”无效，解法必须是“正确种类的努力”。</div>
+  </div>
+  <div class="card b">
+    <h3>理想困难 + 提取练习</h3>
+    <span class="lbl">核心机制</span><p>不看笔记回想、不看内容解释、用到新场景——让大脑练习你真正要的那项能力：调用。</p>
+    <span class="lbl">关键理解</span><p>费劲是特征，不是故障。原文用学骑自行车类比：摇晃是学会的一部分，一直有人扶着，平衡感就练不出来。</p>
+    <div class="quote">“比较困难的活动建立了更强的记忆。比较容易的活动主要建立了信心。”</div>
+    <div class="edge">边界：“理想”二字是关键——困难要落在你想练的能力上。难到完全想不起任何东西时，应先回去补材料再提取，否则只剩挫败。<span class="sev lo">笔者推导</span></div>
+    <div class="rel">关联：“合上笔记五句话”就是提取练习的最小落地形式。</div>
+  </div>
+</div>
+
+<h2>方法：五格框架怎么用</h2>
+<table>
+  <tr><th style="width:110px">格</th><th style="width:250px">要回答的问题（原文）</th><th style="width:230px">读 AI agents 时由谁填（原文示例）</th><th>合上笔记后的自测句 <span class="sev lo">笔者推导</span></th><th style="width:220px">常见失误 <span class="sev lo">笔者推导</span></th></tr>
+  <tr><td><b>问题</b></td><td>这份素材想解决什么？读之前先用自己的话写下你的问题</td><td>“为什么 agents 在任务变复杂时会崩溃？”</td><td>“我想弄清的是……，因为……”</td><td>问题太大（“AI 是什么”），什么都能往里装</td></tr>
+  <tr><td><b>主张</b></td><td>它给出的最强答案是什么？</td><td>一篇文章给出主张</td><td>“对这个问题最有力的回答是……”</td><td>记下作者原句，却说不出一句自己的转述</td></tr>
+  <tr><td><b>证据</b></td><td>是什么让这个答案可信？</td><td>一个 benchmark 给出证据</td><td>“支撑它的是……（数据 / 实验 / 案例）”</td><td>把“作者很自信”当成证据</td></tr>
+  <tr><td><b>反方观点</b></td><td>它在哪里可能不完整、错误，或取决于情境？</td><td>一集播客给出反方意见</td><td>“它在……情况下不成立”</td><td>只收集同意的来源，这一格永远空着</td></tr>
+  <tr><td><b>应用</b></td><td>我能在哪里不重新打开素材就用上它？</td><td>一个案例研究说明应用场景</td><td>“下周我可以在……用上它”</td><td>写成“以后可能有用”，没有具体场景</td></tr>
+</table>
+<div class="grid2">
+  <div class="card">
+    <h3>机制：为什么五格有效</h3>
+    <p>跟着来源走，大脑只是在反应（“这很重要”“存下来”）；从框架出发，每个想法都得找到位置——定义问题、支持主张、挑战论点或指出用处。多个来源被迫回答同一个问题，碎片才会拼成结构。</p>
+    <div class="quote">“框架把阅读变成分类，而不是收集。”</div>
+    <div class="do">落地：打开素材前，在笔记顶部先写好五个空格；读的过程只往格子里填，填不进任何一格的内容不存。<span class="sev lo">笔者推导</span></div>
+  </div>
+  <div class="card s">
+    <h3>原文依据</h3>
+    <div class="quote">“来源的安排是为了作者的论证，不是为了你的理解。”</div>
+    <div class="quote">“没有目标时，一切都看起来很有用。”</div>
+    <div class="quote">“来源不再是地图。它变成原材料。”</div>
+    <div class="edge">边界：单篇来源往往只能填满一两格；要凑齐反方观点和应用，通常得主动去找第二、第三个来源。<span class="sev lo">笔者推导</span></div>
+  </div>
+</div>
+
+<h2>心法：四层“学会了吗”检验</h2>
+<div class="lv">
+  <div class="h" style="text-align:center">层</div><div class="h">检验什么（原文）</div><div class="h">怎么做 <span class="sev lo">笔者推导</span></div>
+  <div class="n">1</div><div><b>不看素材能解释吗</b>：合上笔记，用五句话讲清问题、主张、证据、反方观点和一个应用</div><div>读完立刻做，讲不出的那一格就是下一步要补的地方，回去只查那一格</div>
+  <div class="n">2</div><div><b>明天还能用吗</b>：不重新打开笔记</div><div>隔一天再讲一遍，比当场讲更能分出熟悉感和真记住</div>
+  <div class="n">3</div><div><b>压力下想得起吗</b>：会议、决策、被人追问时</div><div>找人追问你，或者自己模拟被问“你怎么看”，限时一分钟回答</div>
+  <div class="n">4</div><div><b>能迁移吗</b>：用在没见过的情境里；会不会让下一件事更容易学</div><div>给想法找一个原文没提到的应用场景；学下一个相关主题时，看它能不能当挂钩</div>
+</div>
+<div class="grid2">
+  <div class="card o">
+    <h3>为什么“五句话”是最好用的一层</h3>
+    <p>它同时检验了框架有没有建好（五格各一句）和提取能不能完成（不看笔记）。成本极低，却能把“熟悉感从哪里开始”精确标出来。</p>
+    <div class="quote">“处理让想法感觉熟悉。学习让想法变得可用。”</div>
+    <div class="do">配套心态：讲不出来时想翻笔记的冲动，正是原文说的“有用的缺口”，先忍住、写下卡在哪，再去查。</div>
+  </div>
+  <div class="card r">
+    <h3>适用边界 <span class="sev lo">笔者推导</span></h3>
+    <div class="edge">纯技能型学习（写代码、做菜、乐器）中，“应用”这一格要换成动手做一遍，五句话说得清不代表做得出。</div>
+    <div class="warn">消遣阅读、小说、随手刷的资讯不必套框架。框架的成本只该花在需要你表态或决策的主题上，否则会把阅读变成负担。</div>
+  </div>
+</div>
+
+<h2>选型：什么场景怎么用五格 <span class="sev lo">笔者推导</span></h2>
+<table>
+  <tr><th style="width:230px">场景</th><th>推荐做法</th><th>核心理由</th><th>不推荐</th><th>为什么不行</th></tr>
+  <tr><td><b>要对某个趋势表态</b>（原文开篇情境）</td><td>先写问题，跨 3–4 个来源分别填五格</td><td>多来源回答同一个问题，才拼得出立场</td><td>把相关文章都存进收藏夹</td><td>每个来源各说各话，一周后只剩碎片</td></tr>
+  <tr><td><b>精读一篇长文或一本书</b></td><td>读前写问题，读完合上书用五句话复述</td><td>单一来源天然缺反方观点，五格会提醒你去补</td><td>逐章画线、整理摘录</td><td>原文指出这正是“不受欢迎的轻松”</td></tr>
+  <tr><td><b>用 AI 总结资料</b></td><td>先自己写问题和初步主张，再让 AI 补证据与反方，最后自己写应用</td><td>保住“决定要理解什么”这一步在自己手里</td><td>直接让 AI 总结五篇文章</td><td>原文：总结完仍不知道自己怎么想，学到的是依赖</td></tr>
+  <tr><td><b>追每周变化的行业新闻</b></td><td>把新闻当“证据”或“反方”填进已有问题</td><td>新信息有挂钩，不会每周从零开始</td><td>每条新闻单独记笔记</td><td>没有结构，大图景始终模糊</td></tr>
+  <tr><td><b>备考或背诵型学习</b></td><td>以提取练习为主（自测、默写），五格为辅</td><td>原文所引研究本身就是测验增强学习</td><td>考前反复重读</td><td>只建立信心，不建立记忆</td></tr>
+</table>
+
+<h2>横向对比</h2>
+<table>
+  <tr><th style="width:160px">维度</th><th>旧流程：跟随素材</th><th>新流程：先定问题</th></tr>
+  <tr><td><b>起点问题</b></td><td>我接下来该读什么？</td><td>我到底想理解什么？</td></tr>
+  <tr><td><b>谁决定注意力</b></td><td>素材的顺序（服务于作者的论证）</td><td>你的问题（服务于你的理解）</td></tr>
+  <tr><td><b>大脑在做什么</b></td><td>反应：“这很重要”“存下来”</td><td>组织：这一句在扮演哪一格</td></tr>
+  <tr><td><b>产出</b></td><td>分页、重点、引用——花过时间的证明</td><td>一个能自己带着走的观点</td></tr>
+  <tr><td><b>检验方式</b></td><td>我读完了吗？</td><td>合上笔记，我能用它来思考吗？</td></tr>
+  <tr><td><b>一周后</b></td><td>记得“读过”，拼不出立场</td><td>能说出“我怎么想”以及为什么</td></tr>
+</table>
+<table>
+  <tr><th style="width:160px">维度</th><th>AI 作为拐杖</th><th>AI 作为倍增器</th><th>一句话结论</th></tr>
+  <tr><td><b>前提</b></td><td>脆弱知识，没有底层结构</td><td>耐用知识，有自己的问题和框架</td><td rowspan="4">AI 能给解释，但不能替你决定要理解什么。原文的判断：差别在底下的结构。</td></tr>
+  <tr><td><b>怎么用 AI</b></td><td>让它总结、定义、给答案</td><td>让它在你的框架里补证据、找反方</td></tr>
+  <tr><td><b>面对输出</b></td><td>听起来自信就接受</td><td>能分清好答案和有说服力的答案</td></tr>
+  <tr><td><b>长期结果</b></td><td>一条提示词就能复现你的学习成果</td><td>新闻和工具变化时仍保有判断</td></tr>
+</table>
+
+<h2>避坑清单</h2>
+<div class="grid2">
+  <div class="card r"><h3>把收藏和笔记当学会<span class="sev hi">致命</span></h3><p>现象：14 个分页、一页 Notion、几行荧光笔，一周后说不出观点。</p><p>原因：这些只证明花过时间，底层结构没有在建立。</p><div class="do">解法：每次学习结束前，合上一切，用五句话复述；讲不出就不算完成。</div></div>
+  <div class="card r"><h3>让素材决定什么重要<span class="sev hi">致命</span></h3><p>现象：一篇带到另一篇，什么都想存。</p><div class="quote">“因为我没有先选定问题，所以每个来源都感觉值得保存。”</div><div class="do">解法：打开任何东西前先写一个问题，哪怕不完美。</div></div>
+  <div class="card r"><h3>用 AI 总结代替思考<span class="sev hi">致命</span></h3><p>现象：午饭前总结完五篇文章，仍不知道自己怎么想。</p><p>原因：一条好提示词能复现的成果，是依赖而不是优势；没有结构也就无从评估 AI 的输出。</p><div class="do">解法：问题和应用两格必须自己写，AI 只帮忙填证据和反方。<span class="sev lo">笔者推导</span></div></div>
+  <div class="card o"><h3>用重读和整理笔记来复习<span class="sev md">小心</span></h3><p>原因：越读越眼熟，制造“我懂了”的错觉，却没有建立存取能力。</p><div class="do">解法：把复习时间换成提取——先回想、再对照，只补想不起来的部分。</div></div>
+  <div class="card s"><h3>框架变成填表作业<span class="sev md">小心</span><span class="sev lo">笔者推导</span></h3><p>现象：五格填得工整，却只是把原文句子搬进格子。</p><p>原因：搬运仍是“处理”，不是“学习”。</p><div class="do">解法：每格只许用自己的话写一句；反方观点一格不许空着。</div></div>
+  <div class="card s"><h3>问题定得太大或太空<span class="sev md">小心</span><span class="sev lo">笔者推导</span></h3><p>现象：“我想了解 AI”——所有内容都能塞进去，等于没有问题。</p><div class="do">解法：参照原文示例，问到具体机制或冲突（“为什么……在……时会……”），一次学习只追一个问题。</div></div>
+</div>
+
+<div class="end">
+  <h2>结论</h2>
+  <h3>总结</h3>
+  <ol>
+    <li>读过却说不出观点，病根不在记性，而在“素材的顺序变成了你的思考顺序”。</li>
+    <li>读之前先写问题，再用问题、主张、证据、反方观点、应用五格去读，把阅读从收集变成分类。</li>
+    <li>顺畅的学习制造熟悉感，产出脆弱知识；有用的吃力感（提取练习、理想困难）才留下耐用知识。</li>
+    <li>检验是否学会：合上笔记，用五句话讲清楚；能在压力下、新情境里、第二天还用得上。</li>
+    <li>AI 时代这件事从生产力问题变成判断力问题：结构决定 AI 是拐杖还是倍增器。</li>
+  </ol>
+  <h3>行动清单</h3>
+  <ol>
+    <li>下一次打开文章、播客或报告前，先在笔记顶部写下一句“我到底想理解什么”。</li>
+    <li>建一个五格模板（问题 / 主张 / 证据 / 反方观点 / 应用），读的时候只往格子里填。</li>
+    <li>读完立刻合上一切，用五句话复述；讲不出的那一格，回去只查那一格。</li>
+    <li>第二天不看笔记再讲一遍，或者讲给一个人听，让对方追问一次“你怎么看”。</li>
+    <li>用 AI 时先自己写好问题和初步主张，再让它补证据和反方，应用那一格自己写。<span class="sev lo">笔者推导</span></li>
+  </ol>
+  <h3>关键认知转变</h3>
+  <p>从“我读完了吗”变成“我能用它来思考吗”；从“让素材告诉我什么重要”变成“由我的问题决定用什么素材”；从“学得顺才对”变成“卡住的那一刻才是学习”。</p>
+</div>
+<div class="foot">原文：useyourbrainchn.substack.com/p/7c2 · 收录 2026-11-11 · 标注“笔者推导”的内容是本笔记基于作者立场的延伸或事实核查，不是原文观点</div>
+</div>
+    </div>
+  </foreignObject>
+</svg>

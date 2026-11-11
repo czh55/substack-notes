@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="读得多、存得多，却讲不清、用不出——作者认为，是负责慢思考的“系统二”一直没被叫醒。她给出六个必须按顺序练的习惯：给焦虑换成“在乎”的标签，把念头写到纸上腾出工作记忆，追问每个前提是谁提出的，用“几成把握”代替对错，把新知识接到旧知识上而不是囤笔记，讲给外行人听来暴露漏洞；并附六道自检题，卡住时按顺序找断点。">
+<title>拿回思考力的六个习惯：按顺序练，附六道自检题｜精读笔记</title>
+<script>if('IntersectionObserver' in window)document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;900&display=swap">
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+:root{--ink:#1d2733;--ink-2:#46505c;--ink-3:#7a8490;--paper:#f3f5f7;--sheet:#ffffff;--line:#dfe4ea;
+--accent:#ff6719;--accent-soft:#fff1e8;--teal:#0f766e;--teal-soft:#e6f4f1;
+--serif:"Noto Serif SC","Songti SC","STSong",serif;--sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+body{margin:0;font-family:var(--sans);line-height:1.85;color:var(--ink);
+background:var(--paper) radial-gradient(circle at 1px 1px,rgba(29,39,51,.07) 1px,transparent 0) 0 0/22px 22px}
+a{color:var(--teal)}
+.wrap{width:min(860px,100%);margin:0 auto;padding:40px 28px 96px}
+.crumbs{display:flex;justify-content:space-between;gap:12px;font-size:14px;margin-bottom:28px}
+.crumbs a{text-decoration:none;color:var(--ink-2)}.crumbs a:hover{color:var(--accent)}
+header .pub{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+header h1{font-family:var(--serif);font-size:38px;line-height:1.3;margin:10px 0 10px;font-weight:900}
+header .orig{color:var(--ink-3);font-size:15px;margin:0 0 18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;color:var(--ink-2);padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.meta b{color:var(--ink);font-weight:600}
+.tags{margin:16px 0 0;display:flex;gap:8px;flex-wrap:wrap}
+.tags span{font-size:12px;padding:3px 10px;border-radius:6px;background:var(--teal-soft);color:var(--teal);font-weight:600}
+.cover{margin:28px -28px 8px;overflow:hidden}
+.cover img{display:block;width:100%;height:auto;animation:settle 1.2s cubic-bezier(.2,.7,.2,1) both}
+@keyframes settle{from{transform:scale(1.04);opacity:0}to{transform:none;opacity:1}}
+.lede{font-family:var(--serif);font-size:19px;line-height:1.9;margin:28px 0 8px;color:var(--ink)}
+.toc{margin:32px 0;padding:18px 0;border-top:2px solid var(--ink)}
+.toc h2{font-size:13px;letter-spacing:.14em;color:var(--ink-3);margin:0 0 10px;font-weight:700}
+.toc ol{list-style:none;margin:0;padding:0;counter-reset:t}
+.toc li{display:grid;grid-template-columns:44px 1fr;gap:8px;padding:10px 0;border-bottom:1px dashed var(--line)}
+.toc li .no{font-family:var(--serif);color:var(--accent);font-weight:700}
+.toc li a{color:var(--ink);text-decoration:none;font-weight:600}.toc li a:hover{color:var(--accent)}
+.toc li p{grid-column:2;margin:2px 0 0;font-size:14px;color:var(--ink-2);line-height:1.7}
+.takeaway{background:var(--sheet);border-left:4px solid var(--accent);padding:16px 20px;margin:20px 0 0;border-radius:0 10px 10px 0}
+.takeaway strong{display:block;color:var(--accent);font-size:14px;margin-bottom:4px}
+.takeaway p{margin:0}
+section.chap{margin:64px 0 0}
+.js section.chap{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.js section.chap.in{opacity:1;transform:none}
+.chap .no{font-family:var(--serif);font-size:14px;color:var(--accent);font-weight:700;letter-spacing:.08em}
+.chap h2{font-family:var(--serif);font-size:27px;line-height:1.4;margin:6px 0 4px}
+.chap .orig-h{font-size:13px;color:var(--ink-3);margin:0 0 18px}
+.chap p{margin:0 0 14px;color:var(--ink-2);font-size:17px}
+.chap ul,.chap ol{color:var(--ink-2);font-size:17px;padding-left:1.4em;margin:0 0 14px}
+.chap li{margin:4px 0}
+blockquote{margin:22px 0;padding:4px 0 4px 20px;border-left:3px solid var(--teal);font-family:var(--serif);font-size:18px;color:var(--ink);line-height:1.8}
+blockquote small{display:block;font-family:var(--sans);font-size:12px;color:var(--ink-3);margin-top:6px}
+.note{background:var(--teal-soft);color:#134e4a;font-size:15px;padding:12px 16px;border-radius:10px;margin:18px 0}
+.note b{color:var(--teal)}
+figure{margin:28px 0;background:var(--sheet);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+figure img{display:block;max-width:100%;height:auto;margin:0 auto}
+figcaption{padding:12px 16px;font-size:14px;color:var(--ink-2);border-top:1px solid var(--line)}
+.refs,.comments{margin-top:72px}
+.refs h2,.comments h2{font-family:var(--serif);font-size:22px;margin:0 0 12px}
+.refs ol{padding-left:1.4em;color:var(--ink-2);font-size:14px}
+.comment{padding:14px 0;border-bottom:1px solid var(--line)}
+.comment .who{font-size:13px;color:var(--ink-3)}
+.comment p{margin:4px 0 0;color:var(--ink-2);font-size:15px}
+.next{margin-top:64px;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 24px;border-radius:12px;
+background:linear-gradient(120deg,#1d2733,#2c3a48);color:#fff;text-decoration:none;transition:transform .25s ease}
+.next:hover{transform:translateY(-3px)}
+.next span{font-size:14px;opacity:.75}.next strong{font-family:var(--serif);font-size:20px}
+.next em{font-style:normal;font-size:26px;color:var(--accent)}
+footer{margin-top:40px;font-size:13px;color:var(--ink-3);line-height:1.7}
+@media(max-width:640px){.wrap{padding:24px 18px 72px}header h1{font-size:28px}.cover{margin:24px -18px 8px}
+.lede{font-size:17px}.chap h2{font-size:23px}.chap p,.chap ul,.chap ol{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.js section.chap{opacity:1;transform:none;transition:none}.cover img{animation:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<nav class="crumbs"><a href="index.html">← Substack 札记</a><a href="six-habits-reclaim-thinking-理性分析.svg">理性分析长图 →</a></nav>
+<header>
+<div class="pub">Use Your Brain CHN · Substack</div>
+<h1>拿回思考力的六个习惯：按顺序练，附六道自检题</h1>
+<p class="orig">原标题：如何重新拿回你的思考力：6 個習慣（照順序做，附 6 題自檢）</p>
+<div class="meta"><span>作者 <b>Priscilla Hsu</b></span><span>发布 <b>2026-06-15</b></span><span>原文 <b>2816 字</b></span><span>收录 <b>2026-11-11</b></span><a href="https://useyourbrainchn.substack.com/p/6" target="_blank" rel="noopener">阅读原文 ↗</a></div>
+<div class="tags"><span>思考习惯</span><span>元认知</span><span>学习方法</span><span>决策</span></div>
+</header>
+<div class="cover"><img src="assets/six-habits-reclaim-thinking/cover.jpg" alt="原文封面插画：一个人坐在书桌前，头是一只打开的纸箱，箱顶冒出一团乱线；他从乱线里抽出一根绿色的线，线一路垂到桌上的白纸上，旁边放着插了铅笔的笔筒"></div>
+<p class="lede">你读了很多、学了很多，可真正用得出来、讲得清楚的很少；再多读一本、多存一篇，卡住的感觉也只会越积越重。作者借卡尼曼的“快慢两套系统”解释原因：我们以为的思考靠的是慢系统，可它很懒，平时多半是快系统在反射。要把慢系统叫醒，有先后顺序——她把它整理成六个习惯。</p>
+<div class="takeaway"><strong>一句话带走</strong><p>思考卡住时先别怪自己，按顺序查断点：情绪稳住 → 写下来 → 质疑前提 → 承认只有几成把握 → 把新旧知识接起来 → 讲给外行人听。</p></div>
+<nav class="toc"><h2>文章结构</h2><ol><li><span class="no">§1</span><a href="#s0">读了很多却想不深：慢系统还没被叫醒</a><p>借卡尼曼的系统一 / 系统二说明：我们常让快系统反射，却以为自己在动脑；叫醒慢系统要按顺序来。</p></li><li><span class="no">§2</span><a href="#s1">习惯一：给焦虑换张标签，别让它握方向盘</a><p>情绪上头时慢系统会松手；焦虑越压越反弹，不如把它重新解读为“在乎”。</p></li><li><span class="no">§3</span><a href="#s2">习惯二：把念头写下来，别全塞在脑子里</a><p>工作记忆一次只放得下三四件事；写下来是把“记住”交给纸，让大脑回去“想”。</p></li><li><span class="no">§4</span><a href="#s3">习惯三：质疑每个前提，尤其是聪明人给的</a><p>解题前先问这道题本身对不对；把每个要求追到具体的人，资深者给的要求最危险。</p></li><li><span class="no">§5</span><a href="#s4">习惯四：用“几成把握”想事情，别用对错</a><p>借 Annie Duke 的扑克思维：七成把握让你继续修正、不被结果绑架，还直接指出下一步要补的洞。</p></li><li><span class="no">§6</span><a href="#s5">习惯五：把信息重新接起来，别只是囤</a><p>记忆是一张网而不是仓库；只有把新概念“编码”到已知事物上才算学进去，整齐的笔记反而制造“学会了”的错觉。</p></li><li><span class="no">§7</span><a href="#s6">习惯六：讲给外行人听</a><p>熟悉感不等于会用；费曼技巧往深处找漏洞，“整体—局部—整体”往广处搭结构，两者配合。</p></li><li><span class="no">§8</span><a href="#s7">卡住时先查顺序：六个习惯是一条链</a><p>六个技巧连起来是一条线，哪一环断了后面都接不上；作者把它压缩成六道自检题。</p></li></ol></nav>
+<article>
+<section class="chap" id="s0">
+<div class="no">§1</div>
+<h2>读了很多却想不深：慢系统还没被叫醒</h2>
+<p class="orig-h">原文小标题：（开篇，原文无小标题）</p>
+
+<p>开头一句是引导语：想把这套思考习惯练进日常，可以从“五个注意力界线”开始，再用“五个问题”把输入变成能用的判断。</p>
+<p>接着作者描述一种常见困境：时间一直在花，脑袋却一直停在很浅的地方。她引用卡尼曼（Daniel Kahneman）在《思考，快与慢》中的说法：大脑有两套系统——</p>
+<ul><li><b>一套快</b>：靠直觉，自动运转。</li><li><b>一套慢</b>：很吃力，必须刻意调用它才肯上线。</li></ul>
+<p>我们以为的“思考”靠的是慢系统，可它很懒，能躲就躲。所以很多时候只是快系统在反射，我们却以为自己在动脑。</p>
+<blockquote>问题不在你身上。那套慢系统，根本还没被叫醒。</blockquote>
+<p>而叫醒它是有顺序的，作者把这个顺序整理成下面六个习惯。</p>
+<div class="note"><b>批注：</b>开头引导语说的是“五个注意力界线”和“五个问题”，正文给出的却是六个习惯、六道自检题，两处数字对不上。推测引导语沿用了作者其他文章或产品的介绍文字，阅读时以正文的“六”为准。</div>
+</section>
+<section class="chap" id="s1">
+<div class="no">§2</div>
+<h2>习惯一：给焦虑换张标签，别让它握方向盘</h2>
+<p class="orig-h">原文小标题：习惯一：管理焦虑，别让它牵着你走</p>
+
+<p>作者引用丹·艾瑞里（Dan Ariely）的比喻：每个人身上住着两个人，一个冷静讲理，另一个在又饿又赶时冲出来、整个人是“烫”的。两人做的决定差别很大，而“烫”的那个挑的，事后看通常很糟。</p>
+<p>她强调这与你够不够冷静无关：情绪一上来，大脑里负责慢慢想的部分会自动松开方向盘，交给负责逃命的部分，谁在那个状态下都想不清楚。</p>
+<p>焦虑更难缠——越叫它冷静，它越往反方向冲。作者给出的出路是“换标签”：焦虑和兴奋在身体里很像，都是心跳加快、全身绷紧，差别常常只在你给它贴哪张标签。</p>
+<ul><li><b>Leila Hormozi 的说法</b>：把焦虑叫作“在乎的加强版”。同一个绷紧的身体，可以说“我好紧张”，也可以说“我很在乎、我在期待”。</li><li><b>一项研究</b>：两组人上台前各说一句话，一组说“我很冷静”，一组说“我很兴奋”，说兴奋的那组表现明显更好。身体没变，变的只是解读。</li></ul>
+<p>作者也承认，这种话讲一次你不会信，得反复对自己讲，讲到大脑把这条新路走顺。目标不是把焦虑赶尽杀绝，而是请它离开方向盘，让慢系统有位置坐进来。</p>
+<blockquote>今天可以做的：下次焦虑一上来，先别急着叫自己冷静。换一句话：我不是怕，我是在乎这件事。</blockquote>
+<figure><img src="assets/six-habits-reclaim-thinking/fig-01.png" alt="插画：一位长发女性闭着眼、双手抱住胸前一团乱线，乱线上系着一张小标签，上下两行分别写着 Scared 和 I care" loading="lazy"><figcaption>原文配图：胸口那团乱线是同一团，标签上同时写着“害怕（Scared）”和“我在乎（I care）”——同一种身体感受，可以贴上不同的标签。（图内文字为英文）</figcaption></figure>
+<p>焦虑退到一边之后，会撞上下一个问题：脑袋里的东西太多，装不下了。</p>
+<div class="note"><b>批注：</b>“焦虑和兴奋在身体里其实是同一回事”是简化说法：两者都属于高唤醒状态，生理表现相近，并不完全相同。所引研究为 Alison Wood Brooks 2014 年的实验，结论是把焦虑“重评”为兴奋比劝自己冷静更有效，属于单篇研究，可作参考而非定论。“方向盘交给逃命的部分”也是对情绪与理性脑区关系的通俗比喻。</div>
+</section>
+<section class="chap" id="s2">
+<div class="no">§3</div>
+<h2>习惯二：把念头写下来，别全塞在脑子里</h2>
+<p class="orig-h">原文小标题：习惯二：把想法写下来，别全部塞在脑袋里</p>
+
+<p>很多人以为念头放在脑子里，要用时会自己跳出来。作者直说：不会。</p>
+<p>她引用工作记忆研究：脑袋一次大约只放得下三四件事，再多就开始互相打架。坐下来时那种“脑子塞得很满、却什么都捞不出来”的感觉，常常不是想太多，而是早已超载。慢系统本来就吃力，再让它一边扛着十件事一边思考，当然很快卡死。</p>
+<p>所以写下来，就是先把念头倒出来、腾出位置，才有余力好好想一件事。这个习惯来自 David Allen 的《搞定》（Getting Things Done），作者一直记得其中一句：</p>
+<blockquote>你的大脑是用来产生想法的，不是用来存放想法的。<small>David Allen 原句：Your mind is for having ideas, not holding them.</small></blockquote>
+<p>没做完的事全堆在脑子里，大脑就得一边记一边想，两件事同时跑当然转不动。写下来，等于把“记住”这件杂事交给纸。</p>
+<p>今天可以做的：把在脑袋里转了一整天的那件事，用三行字写出来，先别管写得好不好。</p>
+<p>念头摊到眼前，才能做下一件事：回头质疑它。</p>
+</section>
+<section class="chap" id="s3">
+<div class="no">§4</div>
+<h2>习惯三：质疑每个前提，尤其是聪明人给的</h2>
+<p class="orig-h">原文小标题：习惯三：质疑每一个假设，特别是聪明人给你的</p>
+
+<p>念头摊开后，多数人会直接开始解题。作者让你先停一下，问一句：这道题本身是对的吗？我们常接过一个任务、目标或“本来就该这样”的前提就埋头去做，可那个前提往往没人认真验证过——它可能来自你信任的人、一份看起来很专业的文件，或只是因为大家都这样。</p>
+<p>她引用马斯克（Elon Musk）的五步工作法，第一步最重要也最常被跳过：先让你的需求变得没那么蠢。每个要求都要追到一个活生生的人身上，问他为什么。</p>
+<blockquote>最危险的，是聪明人、资深的人给的要求。</blockquote>
+<p>因为他们够有分量，你根本不会想去顶。结果可能埋头几个月，把一个根本不该存在的需求做得又精致又漂亮。</p>
+<p>为什么排在第三？因为得先把东西摊出来、看清楚，才有办法质疑。脑子一团乱时你连假设长什么样都看不见，只能照单全收；摊在纸上，才认得出哪些是别人硬塞的、哪些根本站不住。</p>
+<p>作者自曝付过最贵的学费：花了好几个星期把一件事做得又细又满，可那件事根本不该以那种方式存在——拼劲全砸在了不该存在的东西上。</p>
+<p>今天可以做的：挑一件你正在做、觉得“本来就该这样”的事，把前提写成一句话，用三个问题去问它：</p>
+<ol><li><b>这是谁说的？</b>追到一个具体的人，而不是“公司”“团队”或“大家”。找不到人，这条前提就很可疑。</li><li><b>为什么？</b>让那个人（或当初的你）给出理由，给不出来的就砍掉。</li><li><b>是不是因为他够聪明、够资深，我才从没想过质疑？</b>这种最危险，分量越重的人给的要求越容易被直接收下。</li></ol>
+<p>问完还站得住的，才是值得花时间的问题，而这种问题你很少一开始就有答案。</p>
+<figure><img src="assets/six-habits-reclaim-thinking/fig-02.png" alt="插画：一只穿西装袖子的大手从上方递下一块写字板，下方的小个子男生接过写字板，皱眉微笑，正用笔在清单上画问号" loading="lazy"><figcaption>原文配图：上方伸来的“大手”象征资深者交下的任务，接手的人没有照单全收，而是在清单上画了个问号——对应“质疑聪明人给的前提”。（图内无可辨识文字）</figcaption></figure>
+</section>
+<section class="chap" id="s4">
+<div class="no">§5</div>
+<h2>习惯四：用“几成把握”想事情，别用对错</h2>
+<p class="orig-h">原文小标题：习惯四：用“几成把握”想事情，别用“对或错”</p>
+
+<p>急着想清楚的人，常常抓到第一个冒出来的答案就停下。作者喜欢 Annie Duke 的想法：她曾是职业扑克选手，后来专门研究决策，写过《How to Decide》。打牌时永远看不到对手的牌，你不可能“知道”自己会不会赢，只能说“我大概有几成胜算”。真正会做决定的人想事情也是这样，很少用对或错，而是问“我有几成把握”。</p>
+<p>作者列出用“几成把握”思考的三个好处：</p>
+<ol><li><b>不会一翻牌就收工。</b>用对错想，一觉得自己对了就停手，还会回头护着那个答案；改成七成把握，意味着还有三成是活的，你会继续看、继续修。</li><li><b>结果差不代表当初想错。</b>你可能做了一个七成的选择，刚好那三成发生了。Duke 把“拿结果回头评判当初决定”的误判叫作 resulting，这样想的人常被一两次坏结果吓破胆，从此不敢出手。</li><li><b>它直接给你下一步。</b>剩下那三成就是要去补的洞；而且只认七成时，“被推翻”就成了意料中的事，你才敢在没完全确定时先动起来，不必苦等百分之百。</li></ol>
+<p>作者还把困惑也放进这个框架：困惑通常代表大脑正在把新东西和旧东西接起来，愿意在那个不舒服的地方多待一会儿，它才接得完。</p>
+<p>她坦白这是自己最常逃的一关：一卡住，第一反应很少是动笔，而是去买下一门课、翻开下一本书；可以为一件还没真正开始的事准备两个多星期，每天忙得团团转。</p>
+<blockquote>我跟自己说我需要更多信息。讲白了，我只是不想承认：我早就该动了，只是还没想清楚而已。</blockquote>
+<p>今天可以做的：找一个你假装有答案的问题，改写成“我大概有几成把握，因为……”，剩下那几成就是接下来要补的地方。</p>
+<figure><img src="assets/six-habits-reclaim-thinking/fig-03.png" alt="插画：一个男生双手捧着一张牌面朝自己的扑克牌，微笑看着它，头顶浮着“70%”" loading="lazy"><figcaption>原文配图：看着手里的牌，心里想的是“70%”而不是“赢或输”——对应“用几成把握想事情”。（图内文字为“70%”）</figcaption></figure>
+<div class="note"><b>批注：</b>原文注释说 resulting 一词“出自她的著作”，更准确的说法是：这是扑克圈原有的行话，Annie Duke 在《Thinking in Bets》中借用并使之广为人知。她最系统讲“用概率下注式思考”的书也是《Thinking in Bets》，《How to Decide》是其后的实操续作。</div>
+</section>
+<section class="chap" id="s5">
+<div class="no">§6</div>
+<h2>习惯五：把信息重新接起来，别只是囤</h2>
+<p class="orig-h">原文小标题：习惯五：重组信息，别只是囤</p>
+
+<p>一旦承认自己没有十成把握，真正的功课才开始：把缺的那几成一格一格补起来。作者认为，真正的思考发生在你把信息重新接起来的那一刻，光是存下来，什么都还没发生。</p>
+<p>她引用学习科学中常被跳过的一步——“编码”。说白了，就是拿一个新概念去勾住你已经知道的事，再用自己的话讲一遍。只存进笔记软件不算，存进去的只是在积灰，被你勾起来的才真的进了脑子。这也解释了为什么整理笔记很有成就感，真正学到的却很少。</p>
+<blockquote>你可以把记忆想成一张网，而不是一座仓库。</blockquote>
+<p>一则笔记、一篇文章都不是孤岛，只是网上的一个点。你囤的是一叠排得整整齐齐的笔记，真正有用的是把它们串起来的那张网。所以笔记整理得越漂亮，有时反而越危险——那种整齐会喂给你“我学会了”的错觉，其实只是收好了而已。</p>
+<p>作者说自己的毛病正好相反：太会往深里想、拆得很细，这块肌肉跑在最前面，把“做出来、讲出去”远远甩在后面——改了二十几个版本，却一场都还没真正办成。</p>
+<p>今天可以做的：拿两则看起来完全无关的笔记，写一句话说明它们有什么关系。</p>
+<figure><img src="assets/six-habits-reclaim-thinking/fig-04.png" alt="左右对比插画：左边标题 STACKING (REORGANIZE)，一个人把纸箱一个个往上叠成高塔；右边标题 CONNECTING (UNDERSTAND)，另一个人用一根线把散落的圆点连成星形" loading="lazy"><figcaption>原文配图：左为“堆叠”，右为“连接（理解）”——把箱子码整齐不等于理解，把点连成图形才是。注意图中把左侧的堆叠标成 REORGANIZE（重组），而本节标题里的“重组”恰恰指右侧的连接，图文用词略有出入。（图内文字为英文）</figcaption></figure>
+<p>重组完，你会以为自己懂了。但有一个测试能当场戳破这个“以为”。</p>
+<div class="note"><b>批注：</b>原文说“编码”是常被跳过的步骤，说得更精确些：信息进入记忆时总会被编码，被跳过的是“深度编码”或精细加工（elaboration），即主动把新信息和已有知识建立联系。作者引用的 Craik 与 Lockhart 1972 年“加工层次”理论正是这个意思。</div>
+</section>
+<section class="chap" id="s6">
+<div class="no">§7</div>
+<h2>习惯六：讲给外行人听</h2>
+<p class="orig-h">原文小标题：习惯六：把它讲给一个外行人听</p>
+
+<p>测试只有一句：你能不能用一句话、不靠任何专有名词，讲到一个八岁小孩都听得懂？讲得出来的是真想通了；讲不出来、得回头翻书的，是以为自己懂、其实只是读过。</p>
+<p>看得顺、抄得齐，会带来一种很舒服的熟悉感，而熟悉感太容易被当成“我会了”。这正是快系统最会骗人的时候：它让一切显得很顺，你就以为自己懂了。作者给出两个方向相反的方法，把这段距离逼出来：</p>
+<ul><li><b>费曼技巧——往深处钻，负责找洞。</b>挑一个你以为懂的概念，假装讲给完全没背景的人听，全程不准用专有名词。讲到某处卡住、开始想翻书，那里就是破洞：你想用白话讲却过不去，只好含糊带过，或硬塞一个专有名词把缺口盖住。它不帮你背，而是照出你以为懂、其实还没接上的地方。</li><li><b>整体—局部—整体——往广处铺，负责让结构站稳。</b>先给对方一个整体：在讲什么、为什么值得听；再钻进细节，一块一块拆开；最后退回整体，把细节接回大图。少了开头的整体，细节没地方挂；少了结尾的整体，对方手上只有一堆零件。</li></ul>
+<blockquote>两个合起来：一个让你把概念钻透，一个让你把概念摆对位置。</blockquote>
+<p>作者的建议顺序是先用“整体—局部—整体”把脉络铺好，再用费曼技巧往下钻，把还没接上的洞一个个揪出来。她说自己的写作就是被这件事逼出来的：很少先懂了才写，常常是写到一半，那些以为懂的地方一个个露馅，才被逼着真正想一遍。</p>
+<p>今天可以做的：把今天学到的一件事，用费曼的方式讲给一个完全不懂的人听，卡住的点记下来，那就是还没真正懂的地方。</p>
+<div class="note"><b>批注：</b>“费曼技巧”是后人根据费曼的教学风格总结、命名并在网络上流行起来的方法，并非费曼本人提出的固定步骤；原文注释写的是“得名自”费曼，表述本身没有问题。</div>
+</section>
+<section class="chap" id="s7">
+<div class="no">§8</div>
+<h2>卡住时先查顺序：六个习惯是一条链</h2>
+<p class="orig-h">原文小标题：卡住的时候，先检查顺序</p>
+
+<p>拆开看是六个技巧，连起来看是一条线：情绪稳了，慢系统才上得来；慢系统上来了，才写得下来；写下来了，才看得清这道题对不对、敢去质疑；问清楚了，才会发现自己没那么有把握，肯承认；承认了，才会回头重组；重组过了，才讲得出来。</p>
+<blockquote>中间哪一环断了，后面就接不上。</blockquote>
+<p>所以最近觉得想事情卡卡的，先别急着怪自己，回头看一眼顺序，破口常藏在那里。作者把六个习惯压缩成六道自检题，建议存起来，卡住时对一遍：</p>
+<ol><li>我是被焦虑牵着走，还是给它换了个标签？</li><li>我把它写出来了吗，还是只在脑袋里转？</li><li>我有没有质疑这道题的假设，追问它是谁出的？</li><li>我是真的想清楚了，还是抓了第一个答案？</li><li>我把它接到已经知道的东西上了吗？</li><li>我讲得出来给一个外行人听吗？</li></ol>
+<div class="note"><b>批注：</b>有意思的是，作者在习惯四、五、六里坦白的个人短板——准备过度迟迟不动、拆得太细做不出来、写到一半才发现没懂——恰好分别卡在“承认把握不足”“重组后输出”“讲出来”这几环，可以看作她这条链的现身说法。（笔者推导）</div>
+</section>
+</article>
+<section class="refs"><h2>原文注释与来源</h2><ol><li>丹尼尔·卡尼曼（Daniel Kahneman），《思考，快与慢》（Thinking, Fast and Slow），2011。书中区分“系统一”（快、自动、直觉）与“系统二”（慢、费力、需要刻意启动）。</li><li>丹·艾瑞里（Dan Ariely），《怪诞行为学》（Predictably Irrational），2008。讨论情绪高涨的“热”状态如何让人做出与冷静时截然不同的决定。</li><li>“焦虑是在乎的放大版”这一重新解读，来自 Leila Hormozi 在播客与内容中反复提到的说法。</li><li>Alison Wood Brooks（2014），“Get Excited: Reappraising Pre-Performance Anxiety as Excitement”，Journal of Experimental Psychology: General 143(3)。上台前对自己说“我很兴奋”的人，表现优于说“我很冷静”的人。</li><li>戴维·艾伦（David Allen），《搞定》（Getting Things Done），2001。原句：“Your mind is for having ideas, not holding them.”（你的大脑是用来产生想法的，不是用来存放想法的。）</li><li>工作记忆一次大约只能保留三到四个项目。见 Nelson Cowan（2001），“The Magical Number 4 in Short-Term Memory”，修正了 Miller 1956 年著名的“7±2”估计。</li><li>埃隆·马斯克（Elon Musk）的五步工程流程，出自 2021 年 Everyday Astronaut 的星舰基地（Starbase）专访。第一步是“make your requirements less dumb”（让需求没那么蠢），他特别提醒：聪明、资深的人给的需求最危险，因为你不会去质疑。</li><li>安妮·杜克（Annie Duke），《Thinking in Bets》（2018）与《How to Decide》（2020）。原文称“resulting”一词出自她的著作，指用单一结果回头评判当初决定的好坏。</li><li>“编码”（encoding）是记忆形成的关键步骤：把新信息连接到既有知识，比单纯重复更容易写进长期记忆。可参考 Craik 与 Lockhart（1972）的“加工层次”（levels of processing）理论。</li><li>费曼技巧（Feynman Technique）：用最浅白的语言把一个概念讲给外行人听，借此照出自己理解中的漏洞，得名自物理学家理查德·费曼（Richard Feynman）。</li></ol></section>
+
+<a class="next" href="six-habits-reclaim-thinking-理性分析.svg"><div><span>换一种读法</span><br><strong>理性分析：关系图、对比表、避坑与行动清单</strong></div><em>→</em></a>
+<footer>本页为个人学习笔记：按原文结构用简体中文复述，引文为短句摘录并已由繁体转为简体，版权归原作者所有。完整内容请阅读 <a href="https://useyourbrainchn.substack.com/p/6" target="_blank" rel="noopener">原文</a>。</footer>
+</main>
+<script>
+if(location.hash)document.querySelectorAll('section.chap').forEach(s=>s.classList.add('in'));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -10% 0px'});
+document.querySelectorAll('section.chap').forEach(s=>io.observe(s));
+</script>
+</body>
+</html>

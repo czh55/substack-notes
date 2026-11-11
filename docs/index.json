@@ -1,6 +1,136 @@
 [
   {
     "date": "2026-11-11",
+    "title": "读书不必记住全部：把一个想法变成下一次的选择",
+    "original_title": "你不必記住一本書的全部~",
+    "summary": "读完一本书记不住大半，不等于白读。作者从“过马路记不住车牌”和记忆奇人 Shereshevsky 的个案说起：大脑本来就会筛选，记得多也可能抓不到重点。她以《The Let Them Theory》为例，示范把一句话依次走过记得、理解、分析、应用、评估、改编：拆开事实与猜测，做一个看得见的动作，事后评估，再改写成自己下次会用的版本。每一次不同的选择，都会留下新的证据。",
+    "author": "Priscilla Hsu",
+    "publication": "useyourbrainchn",
+    "publication_name": "Use Your Brain CHN",
+    "url": "https://useyourbrainchn.substack.com/p/851",
+    "post_date": "2026-08-31",
+    "wordcount": 1751,
+    "primary": "learning",
+    "tags": [
+      "阅读方法",
+      "知识应用",
+      "布鲁姆分类法",
+      "设立边界"
+    ],
+    "cover": "assets/no-need-remember-whole-book/cover.jpg",
+    "outputs": {
+      "html": "no-need-remember-whole-book-精读笔记.html",
+      "svg": "no-need-remember-whole-book-理性分析.svg"
+    },
+    "svg_height": 9815,
+    "slug": "no-need-remember-whole-book"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "读完一本书，如何有自己的观点",
+    "original_title": "讀完一本書，如何有有自己的觀點？",
+    "summary": "笔记、心智图和第二大脑做得再完整，读完书写出来的仍常是“缩短版原书”。作者以《The Book of Elon》中〈The Algorithm〉一章为例：书里的方法带着作者的目标、资源和限制，摘要只留下结论；资料库能存能找，却不知道哪条笔记对眼前有用。缺的那一步是先问“我现在想解什么问题”，再从书里挑一段去试，按结果决定留下、改掉或先放着。",
+    "author": "Priscilla Hsu",
+    "publication": "useyourbrainchn",
+    "publication_name": "Use Your Brain CHN",
+    "url": "https://useyourbrainchn.substack.com/p/eec",
+    "post_date": "2026-08-17",
+    "wordcount": 1265,
+    "primary": "learning",
+    "tags": [
+      "阅读方法",
+      "读书笔记",
+      "写作",
+      "第二大脑"
+    ],
+    "cover": "assets/form-own-view-after-book/cover.jpg",
+    "outputs": {
+      "html": "form-own-view-after-book-精读笔记.html",
+      "svg": "form-own-view-after-book-理性分析.svg"
+    },
+    "svg_height": 8861,
+    "slug": "form-own-view-after-book"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "读了那么多却没有自己的想法？守住注意力的 5 条界线",
+    "original_title": "為什麼你讀了那麼多，卻沒有自己的想法：5 個重新守住注意力的界線",
+    "summary": "读了很多书、听了很多播客，被问“你自己怎么看”时却只能复述别人。作者认为原因不是材料不够，而是一天到晚都在输入、没有空档把输入变成自己的；高强度刺激又抬高了多巴胺基线，让安静变得难熬。她给出 5 条小到今天就能开始的界线：吃饭只吃饭、每天留 15–30 分钟不输入、手机搬出卧室、起床后先不碰手机、每周完整读完一篇长文。",
+    "author": "Priscilla Hsu",
+    "publication": "useyourbrainchn",
+    "publication_name": "Use Your Brain CHN",
+    "url": "https://useyourbrainchn.substack.com/p/5",
+    "post_date": "2026-07-06",
+    "wordcount": 2299,
+    "primary": "attention",
+    "tags": [
+      "注意力管理",
+      "深度思考",
+      "多巴胺基线",
+      "数字习惯"
+    ],
+    "cover": "assets/five-attention-boundaries-own-ideas/cover.jpg",
+    "outputs": {
+      "html": "five-attention-boundaries-own-ideas-精读笔记.html",
+      "svg": "five-attention-boundaries-own-ideas-理性分析.svg"
+    },
+    "svg_height": 9665,
+    "slug": "five-attention-boundaries-own-ideas"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "拿回思考力的六个习惯：按顺序练，附六道自检题",
+    "original_title": "如何重新拿回你的思考力：6 個習慣（照順序做，附 6 題自檢）",
+    "summary": "读得多、存得多，却讲不清、用不出——作者认为，是负责慢思考的“系统二”一直没被叫醒。她给出六个必须按顺序练的习惯：给焦虑换成“在乎”的标签，把念头写到纸上腾出工作记忆，追问每个前提是谁提出的，用“几成把握”代替对错，把新知识接到旧知识上而不是囤笔记，讲给外行人听来暴露漏洞；并附六道自检题，卡住时按顺序找断点。",
+    "author": "Priscilla Hsu",
+    "publication": "useyourbrainchn",
+    "publication_name": "Use Your Brain CHN",
+    "url": "https://useyourbrainchn.substack.com/p/6",
+    "post_date": "2026-06-15",
+    "wordcount": 2816,
+    "primary": "thinking",
+    "tags": [
+      "思考习惯",
+      "元认知",
+      "学习方法",
+      "决策"
+    ],
+    "cover": "assets/six-habits-reclaim-thinking/cover.jpg",
+    "outputs": {
+      "html": "six-habits-reclaim-thinking-精读笔记.html",
+      "svg": "six-habits-reclaim-thinking-理性分析.svg"
+    },
+    "svg_height": 10226,
+    "slug": "six-habits-reclaim-thinking"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "用五个问题，把读过的信息变成自己的判断",
+    "original_title": "用 5 個問題，把任何資訊變成你能用的思考",
+    "summary": "作者读了 4 篇文章、听了一集播客、记满笔记，一周后被问到看法却说不出观点。她把病根归结为“跟着素材的顺序走”，主张读之前先写下问题，再用问题、主张、证据、反方观点、应用五格去读；并借理想困难、认知负荷和提取练习说明顺畅学习只制造熟悉感，合上笔记用五句话讲清才算学会。AI 时代，脆弱知识让 AI 成为拐杖，耐用知识让它成为倍增器。",
+    "author": "Priscilla Hsu",
+    "publication": "useyourbrainchn",
+    "publication_name": "Use Your Brain CHN",
+    "url": "https://useyourbrainchn.substack.com/p/7c2",
+    "post_date": "2026-05-11",
+    "wordcount": 2774,
+    "primary": "learning",
+    "tags": [
+      "学习方法",
+      "提取练习",
+      "思考框架",
+      "AI 判断力"
+    ],
+    "cover": "assets/five-questions-turn-info-into-thinking/cover.jpg",
+    "outputs": {
+      "html": "five-questions-turn-info-into-thinking-精读笔记.html",
+      "svg": "five-questions-turn-info-into-thinking-理性分析.svg"
+    },
+    "svg_height": 9825,
+    "slug": "five-questions-turn-info-into-thinking"
+  },
+  {
+    "date": "2026-11-11",
     "title": "信息过载时，怎么快速学会一个新领域",
     "original_title": "如何快速學會一個新領域，就算你已經被焦慮淹沒了",
     "summary": "今天学习的难题不是找不到资料，而是能看的东西太多。作者以自学 Claude Code 时被 YouTube 推荐带偏为引子，给出三套筛选方法：用“缺地图还是缺捷径”决定自学还是买课；把探索和投入分开，按结构、主要概念、细节分层学习，并用五步流程区分趋势与杂讯；用七层可信度筛选器判断谁值得信任，其中最强的一条是“带别人到过你想去的地方”。",

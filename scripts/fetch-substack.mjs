@@ -33,6 +33,9 @@ export function parseSubstackUrl(raw) {
   } catch {
     return null;
   }
+  // App 分享链接：substack.com/@user/note/p-197237903、substack.com/home/post/p-197237903
+  const byId = u.pathname.match(/\/p-(\d+)(?:$|[/?#])/);
+  if (byId) return { postId: byId[1] };
   const m = u.pathname.match(/^\/p\/([^/?#]+)/);
   if (!m) return null;
   return {
@@ -131,12 +134,13 @@ async function main() {
   const args = process.argv.slice(2);
   const url = args.find((a) => !a.startsWith('--'));
   if (!url) die('缺少文章链接。用法：node scripts/fetch-substack.mjs "<url>" [--slug=xxx]');
-  const info = parseSubstackUrl(url);
-  if (!info) die(`不是 Substack 文章链接（需要 /p/<slug> 路径）：${url}`);
+  let info = parseSubstackUrl(url);
+  if (!info) die(`不是 Substack 文章链接（需要 /p/<slug> 或 /p-<id> 路径）：${url}`);
 
-  const slug = args.find((a) => a.startsWith('--slug='))?.split('=')[1] || info.postSlug;
   const proxy = detectProxy();
-  const api = `https://${info.host}/api/v1/posts/${info.postSlug}`;
+  const api = info.postId
+    ? `https://substack.com/api/v1/posts/by-id/${info.postId}`
+    : `https://${info.host}/api/v1/posts/${info.postSlug}`;
   console.error(`[fetch-substack] GET ${api}${proxy ? `  (proxy ${proxy})` : ''}`);
 
   let post;
@@ -145,6 +149,12 @@ async function main() {
   } catch (err) {
     die(`抓取失败：${err.message.split('\n')[0]}。国内网络请确认代理可用。`);
   }
+  if (info.postId) {
+    post = post?.post;
+    if (!post?.canonical_url) die(`按 ID ${info.postId} 未找到文章。`);
+    info = parseSubstackUrl(post.canonical_url);
+  }
+  const slug = args.find((a) => a.startsWith('--slug='))?.split('=')[1] || info.postSlug;
   if (!post?.body_html) die('API 未返回 body_html（可能是付费文章或链接失效）。');
 
   const workDir = path.join(ROOT, '_work', slug);

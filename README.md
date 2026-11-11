@@ -43,6 +43,11 @@ npm run serve                                                  # http://127.0.0.
 
 | 收录 | 文章 | 来源 |
 |------|------|------|
+| 2026-11-11 | [读书不必记住全部：把一个想法变成下一次的选择](docs/no-need-remember-whole-book-精读笔记.html) | Use Your Brain CHN · Priscilla Hsu |
+| 2026-11-11 | [读完一本书，如何有自己的观点](docs/form-own-view-after-book-精读笔记.html) | Use Your Brain CHN · Priscilla Hsu |
+| 2026-11-11 | [读了那么多却没有自己的想法？守住注意力的 5 条界线](docs/five-attention-boundaries-own-ideas-精读笔记.html) | Use Your Brain CHN · Priscilla Hsu |
+| 2026-11-11 | [拿回思考力的六个习惯：按顺序练，附六道自检题](docs/six-habits-reclaim-thinking-精读笔记.html) | Use Your Brain CHN · Priscilla Hsu |
+| 2026-11-11 | [用五个问题，把读过的信息变成自己的判断](docs/five-questions-turn-info-into-thinking-精读笔记.html) | Use Your Brain CHN · Priscilla Hsu |
 | 2026-11-11 | [信息过载时，怎么快速学会一个新领域](docs/learn-new-field-amid-info-overload-精读笔记.html) | Use Your Brain CHN · Priscilla Hsu |
 
 ## 依赖

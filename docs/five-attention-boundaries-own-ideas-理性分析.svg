@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="9665" viewBox="0 0 1320 9665">
+  <foreignObject x="0" y="0" width="1320" height="9665">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+*{margin:0;padding:0;box-sizing:border-box}
+.root{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:#1d2733;padding:52px 64px 40px;
+background:#f3f5f7 radial-gradient(circle at 1px 1px,rgba(29,39,51,.06) 1px,transparent 0) 0 0/22px 22px}
+.pub{font-size:14px;letter-spacing:.14em;color:#ff6719;font-weight:800}
+h1{font-family:"Noto Serif SC","Songti SC",serif;font-size:42px;line-height:1.3;font-weight:900;margin:8px 0 6px;color:#1d2733}
+.orig{font-size:15px;color:#7a8490;margin-bottom:14px}
+.tags{margin:6px 0 18px}
+.tag{display:inline-block;padding:4px 12px;border-radius:6px;font-size:13px;font-weight:700;margin:0 8px 6px 0}
+.t-orange{background:#fff1e8;color:#c2410c}.t-teal{background:#e6f4f1;color:#0f766e}.t-slate{background:#e7ebf0;color:#334155}
+.t-blue{background:#e0ecfb;color:#1d4ed8}.t-red{background:#fde8e8;color:#b91c1c}
+.oneline{font-size:19px;line-height:1.75;background:#fff;border-left:5px solid #ff6719;padding:20px 26px;border-radius:0 14px 14px 0;margin-bottom:26px}
+.oneline b{color:#c2410c}
+h2{font-family:"Noto Serif SC","Songti SC",serif;font-size:27px;font-weight:900;color:#1d2733;margin:40px 0 16px;padding-left:14px;border-left:5px solid #0f766e}
+h3{font-size:20px;font-weight:800;color:#1d2733;margin-bottom:10px}
+p{font-size:16px;line-height:1.8;color:#46505c;margin-bottom:8px}
+li{font-size:15.5px;line-height:1.8;color:#46505c;margin-bottom:4px}
+ul,ol{padding-left:22px;margin:6px 0}
+.map{background:#fff;border-radius:18px;padding:30px 32px;box-shadow:0 4px 24px rgba(29,39,51,.06);margin-bottom:22px}
+.flow{display:flex;align-items:stretch;justify-content:space-between;gap:10px}
+.node{flex:1;background:#f6f8fa;border:2px solid #cfd8e3;border-radius:14px;padding:16px 14px;text-align:center}
+.node b{display:block;font-size:17px;color:#1d2733;margin-bottom:6px}
+.node span{font-size:13.5px;color:#5b6672;line-height:1.6;display:block}
+.node.o{background:#fff6f0;border-color:#ffb68a}.node.o b{color:#c2410c}
+.node.g{background:#eef8f6;border-color:#8fd1c4}.node.g b{color:#0f766e}
+.arrow{align-self:center;font-size:24px;color:#9aa5b1;font-weight:700}
+.cap{font-size:14px;color:#7a8490;text-align:center;margin-top:14px}
+.correct{background:#fff;border:2px dashed #ffb68a;border-radius:14px;padding:20px 24px;margin-bottom:12px}
+.correct h3{color:#c2410c}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.card{background:#fff;border-radius:16px;padding:26px 28px;box-shadow:0 4px 22px rgba(29,39,51,.06);border-top:5px solid #0f766e;margin-bottom:18px}
+.card.o{border-top-color:#ff6719}.card.s{border-top-color:#64748b}.card.r{border-top-color:#dc2626}.card.b{border-top-color:#2563eb}
+.lbl{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;color:#7a8490;margin:10px 0 2px}
+.quote{background:#f6f8fa;border-left:4px solid #cbd5e1;padding:10px 14px;border-radius:0 10px 10px 0;font-size:14.5px;color:#5b6672;margin:10px 0}
+.do{background:#eef8f6;border-left:4px solid #0f766e;padding:10px 14px;border-radius:0 10px 10px 0;font-size:15px;color:#134e4a;margin:10px 0}
+.warn{background:#fdf0f0;border-left:4px solid #dc2626;padding:10px 14px;border-radius:0 10px 10px 0;font-size:15px;color:#991b1b;margin:10px 0}
+.edge{background:#fff8eb;border-left:4px solid #f59e0b;padding:10px 14px;border-radius:0 10px 10px 0;font-size:15px;color:#92400e;margin:10px 0}
+.rel{font-size:14px;color:#1d4ed8;background:#eef4fd;padding:8px 12px;border-radius:8px;margin-top:8px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 22px rgba(29,39,51,.06);margin-bottom:18px}
+th{background:#1d2733;color:#fff;font-size:15px;text-align:left;padding:13px 16px;font-weight:700}
+td{font-size:15px;line-height:1.7;color:#46505c;padding:13px 16px;border-bottom:1px solid #e5e9ee;vertical-align:top}
+td b{color:#1d2733}
+tr:nth-child(even) td{background:#fafbfc}
+.lv{display:grid;grid-template-columns:56px 1fr 1.1fr;gap:0;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 22px rgba(29,39,51,.06);margin-bottom:18px}
+.lv div{padding:12px 16px;border-bottom:1px solid #e5e9ee;font-size:15px;line-height:1.65;color:#46505c}
+.lv .n{font-family:"Noto Serif SC",serif;font-weight:900;color:#ff6719;font-size:20px;text-align:center}
+.lv .h{background:#1d2733;color:#fff;font-weight:700}
+.sev{display:inline-block;font-size:12px;font-weight:800;padding:2px 8px;border-radius:5px;margin-left:8px;vertical-align:middle}
+.sev.hi{background:#fde8e8;color:#b91c1c}.sev.md{background:#fff1e8;color:#c2410c}.sev.lo{background:#e7ebf0;color:#475569}
+.end{background:linear-gradient(125deg,#1d2733,#2d3d4d);border-radius:20px;padding:34px 38px;margin-top:40px;color:#fff}
+.end h2{color:#fff;border-left-color:#ff6719;margin-top:0}
+.end h3{color:#ffb68a;margin:20px 0 8px}
+.end p,.end li{color:rgba(255,255,255,.88)}
+.foot{text-align:center;font-size:13px;color:#7a8490;margin-top:26px}
+</style>
+      <div class="root">
+<div class="pub">USE YOUR BRAIN CHN · PRISCILLA HSU · 2026-07-06</div>
+<h1>读了那么多却没有自己的想法？守住注意力的 5 条界线</h1>
+<div class="orig">原标题：為什麼你讀了那麼多，卻沒有自己的想法：5 個重新守住注意力的界線 · 理性分析</div>
+<div class="tags"><span class="tag t-orange">方法论 · 观点</span><span class="tag t-teal">注意力管理</span><span class="tag t-teal">深度思考</span><span class="tag t-blue">多巴胺基线</span><span class="tag t-slate">数字习惯</span></div>
+
+<div class="oneline">本文解决的核心问题是：<b>输入已经很多，为什么还是长不出自己的观点，以及怎样不靠意志力把思考空间拿回来。</b>作者的诊断是“没有空档消化 + 刺激把安静变得难熬 + 一不舒服就逃”，处方是 5 条按入口设置的小界线：吃饭、白天留白、睡前、早晨、长文阅读。</div>
+
+<div class="map">
+  <h3>概念关系图：从“读很多”到“没有自己的想法”</h3>
+  <div class="flow">
+    <div class="node o"><b>无缝输入</b><span>播客 · YouTube · 文章 · 刷手机<br/>每一项都“有理由”</span></div>
+    <div class="arrow">→</div>
+    <div class="node o"><b>基线被叠高</b><span>强刺激后先掉更低<br/>需要更多刺激才回得来</span></div>
+    <div class="arrow">→</div>
+    <div class="node"><b>安静变难熬</b><span>不适一出现就逃<br/>手机成了逃生门</span></div>
+    <div class="arrow">→</div>
+    <div class="node"><b>没有消化时间</b><span>后台整理被打断<br/>切换留下注意力残留</span></div>
+    <div class="arrow">→</div>
+    <div class="node o"><b>只剩别人的结论</b><span>能复述，不能判断<br/>接不回自己的生活</span></div>
+  </div>
+  <div class="flow" style="margin-top:14px">
+    <div class="node g"><b>挡 · 降刺激</b><span>①吃饭只吃饭<br/>让单轨小事恢复味道</span></div>
+    <div class="node g"><b>挡 · 练不逃</b><span>②每天 15–30 分钟不输入<br/>给情绪命名</span></div>
+    <div class="node g"><b>挡 · 加摩擦</b><span>③手机搬出卧室<br/>④起床先不碰手机</span></div>
+    <div class="node"><b>留 · 练耐力</b><span>⑤每周读完一篇长文<br/>不切走、读完再查</span></div>
+    <div class="node o" style="flex:1.2"><b>拿回判断权</b><span>决定什么能进来、什么值得想、<br/>什么是噪音、什么是别人的结论</span></div>
+  </div>
+  <div class="cap">前四条减少“进来的东西”和“逃走的出口”，第五条练习“留下来”；共同目标不是少用手机，而是给自己的想法留出浮上来的空档</div>
+</div>
+
+<h2>认知纠偏</h2>
+<div class="grid3">
+  <div class="correct"><h3>误解：没想法是因为读得不够</h3><p>纠偏：作者认为恰恰相反，材料太多。缺的是把输入转成自己判断的空档——“读过的留在别人嘴里，读完的才长成你的”。</p></div>
+  <div class="correct"><h3>误解：管不住手机是意志力差</h3><p>纠偏：睡前是决策力最低的时段，跟算法比意志力“你会输，我也会输”。应该改环境：手机放房间外充电，多三步路就是摩擦力。</p></div>
+  <div class="correct"><h3>误解：刷手机是因为无聊</h3><p>纠偏：电梯三十秒、等水开两分钟、工作卡住一下就拿手机，多半是在逃离不适；而自己的想法常从“卡住、不同意、怪怪的”这些不适里冒出来。</p></div>
+</div>
+<div class="correct"><h3>原文的三处表述需要谨慎看待</h3><p>① “基线掉得更低”与“正常值往上调”混用：下降的是无刺激时的感受水平，上升的是“感觉正常”所需的刺激量；把一个周末对应到多巴胺基线变化属于科普类比，《多巴胺国度》的依据主要来自成瘾与长期重度使用案例。② 注意力残留配图里的 100% → 80% → 60% → 40% 是示意数字，Leroy（2009）没有给出这类百分比。③ 文末“5 个入口”配图写每天留白 10–15 分钟，正文写 15–30 分钟，以正文为准。</p></div>
+
+<h2>四个核心机制</h2>
+<div class="grid2">
+  <div class="card o">
+    <h3>多巴胺基线 · 刺激叠加</h3>
+    <span class="lbl">解决什么问题</span><p>解释“为什么坐下来安静一下都做不到”：周六整天刺激满满，周日坐不到十分钟就发慌。</p>
+    <span class="lbl">关键理解</span><p>问题不在安静本身，而在参照系被叠高了。吃饭 + 视频 + 消息三轨并行，大脑就把总量记成“一顿饭该有的量”，单轨的小事全都变淡。</p>
+    <div class="edge">边界：这是一个解释框架，不是可以自测的生理指标；不要据此给自己贴“多巴胺成瘾”标签，严重成瘾问题应找专业帮助。<span class="sev lo">笔者推导</span></div>
+    <div class="rel">关联：是界线一（吃饭只吃饭）和界线三（睡前）的理论依据。</div>
+    <div class="quote">“不是白饭变了，是你的舌头被垫高了。”</div>
+  </div>
+  <div class="card">
+    <h3>逃生门 · 不适耐受</h3>
+    <span class="lbl">解决什么问题</span><p>解释“为什么读很多却长不出观点”：观点的原料是不适感，而我们一感到不适就切走。</p>
+    <span class="lbl">关键理解</span><p>每逃一次，“不舒服就离开”这条路就更顺；留白的作用是练习停在不适里，并追问：我到底不同意哪里？这跟我的生活有什么关系？</p>
+    <div class="edge">边界：留白时的难受更接近戒断，前几天尤其明显；给情绪命名（“我现在想逃”）是让它不糊成一团的工具，不是要压下去。</div>
+    <div class="rel">关联：界线二的核心；也解释了工作卡住时为什么会溜去整理笔记、回消息。</div>
+  </div>
+  <div class="card b">
+    <h3>后台整理 · 消化时间</h3>
+    <span class="lbl">解决什么问题</span><p>解释“为什么想法总在洗澡、走路、排队时冒出来”。</p>
+    <span class="lbl">关键理解</span><p>白天的输入不会立刻消失，而是在安静时被大脑慢慢连接；睡前最后一小时全交给短视频，大脑就一直在接收、没开始消化。</p>
+    <div class="edge">边界：原文没有为此列出来源。它与睡眠中的记忆巩固、创意“酝酿期”研究方向一致，但“后台整理”是通俗说法，不是精确机制。<span class="sev lo">笔者推导</span></div>
+    <div class="rel">关联：界线三（睡前）和界线五（长文的回报在几天后）都依赖这一点。</div>
+  </div>
+  <div class="card s">
+    <h3>注意力残留 · 切换成本</h3>
+    <span class="lbl">解决什么问题</span><p>解释“为什么一整天都在忙，却很难想深”。</p>
+    <span class="lbl">关键理解</span><p>切出去回个消息，一部分注意力会卡在那件事上，切回来要重新接轨；切得越勤，越一直处在半接不接的状态。作者把专注力定性为可以练回来的“耐力”。</p>
+    <div class="edge">边界：Leroy（2009）的研究对象是工作任务之间的切换，效应大小因任务而异；原文配图的百分比是示意，不是测量结果。</div>
+    <div class="rel">关联：界线五的三条规则（不切走、想查先写纸上、读完再查）正是为降低残留设计的。</div>
+  </div>
+</div>
+
+<h2>方法：5 条界线怎么落地</h2>
+<table>
+  <tr><th style="width:190px">界线（原文）</th><th style="width:150px">守住的入口</th><th>具体做法（原文）</th><th style="width:200px">起步量</th><th style="width:230px">常见破功 <span class="sev lo">笔者推导</span></th></tr>
+  <tr><td><b>① 吃饭只吃饭</b></td><td>吃饭时</td><td>手机收到看不见的地方，只吃这一顿；前五分钟的“痒”不对抗，看着它</td><td>明天的一顿午餐</td><td>手机“只是放桌上不看”，屏幕朝上还是会抓</td></tr>
+  <tr><td><b>② 每天留白</b></td><td>白天的零碎空档</td><td>走路、洗碗、发呆时不听、不看、不刷；给情绪命名：“我现在想逃”</td><td>每天 15–30 分钟（原文）</td><td>把“听播客散步”算成留白</td></tr>
+  <tr><td><b>③ 手机不睡在旁边</b></td><td>睡前</td><td>手机到房间外充电；先设闹钟；需要声音用无屏幕音箱；床边放纸质书</td><td>今晚换一个充电位置</td><td>用手机当闹钟，于是又回到枕边</td></tr>
+  <tr><td><b>④ 起床先不碰手机</b></td><td>早晨第一个时段</td><td>喝水、洗脸、晒太阳，随手写一句今天脑子里最吵的事</td><td>目标 90 分钟，10 分钟也算数</td><td>第一天就硬上 90 分钟，失败后整条放弃</td></tr>
+  <tr><td><b>⑤ 每周读完一篇长文</b></td><td>阅读 / 工作时</td><td>一篇长文或一章书，中间不切走、不开新标签页；想查的写在纸上，读完再查</td><td>每周一次</td><td>“先查一下这个词”，然后再也没回来</td></tr>
+</table>
+<div class="grid2">
+  <div class="card s">
+    <h3>为什么是“界线”而不是“戒断”</h3>
+    <p>作者强调要把环境和机制放到对的位置，让人不必整天靠意志力硬撑；每一条都小到今天就能开始，而且是按“入口”设置，不是全面禁止手机。</p>
+    <div class="do">落地：先挑一条读完最有感觉的，守住一条再加下一条——原文说守住一条之后，剩下的会容易很多。</div>
+    <div class="edge">边界：5 条同时上马，很容易因为一次破功而全线放弃。<span class="sev lo">笔者推导</span></div>
+  </div>
+  <div class="card s">
+    <h3>原文依据</h3>
+    <div class="quote">“真正有用的，是把环境和机制放到对的位置，让你不必整天靠意志力硬撑。”</div>
+    <div class="quote">“你不用在凌晨一点跟算法比意志力。你会输，我也会输。”</div>
+    <div class="quote">“你存了那么多笔记。缺的从来就只有这一段不被打断的时间。”</div>
+  </div>
+</div>
+
+<h2>心法：破功时怎么看自己</h2>
+<div class="lv">
+  <div class="h" style="text-align:center">层</div><div class="h">原则（原文）</div><div class="h">怎么查 / 怎么做 <span class="sev lo">笔者推导</span></div>
+  <div class="n">1</div><div><b>看着痒，不对抗</b>：吃饭时想抓手机的痒，是基线在讨刺激</div><div>注意到“想抓”的那一刻，在心里说一句“这是痒”，再继续吃</div>
+  <div class="n">2</div><div><b>给情绪命名</b>：“我现在焦躁 / 想逃 / 想找东西塞进来”</div><div>每次伸手拿手机前，先说出自己想离开的是什么感觉</div>
+  <div class="n">3</div><div><b>追问不适</b>：我到底不同意哪里？跟我的生活有什么关系？</div><div>把这几个问题写在纸上，读到“怪怪的”句子时停下来答一个</div>
+  <div class="n">4</div><div><b>识别破功机制</b>：大脑在讨刺激吗？是不是太累了？是不是把最脆弱的时段交给了最易上瘾的入口？</div><div>破功后只做归因，不做自责；记下发生在哪个时段、哪个入口</div>
+  <div class="n">5</div><div><b>隔天立回去</b>：知道机制，就不会把每一次破功都记在自己头上</div><div>破功的第二天照常执行原定的起步量，不加码补偿</div>
+</div>
+
+<h2>选型：先从哪一条开始</h2>
+<table>
+  <tr><th style="width:250px">你的情况 <span class="sev lo">笔者推导</span></th><th>推荐先做</th><th>核心理由</th><th>暂不推荐</th><th>为什么</th></tr>
+  <tr><td><b>常常熬夜刷到一两点</b></td><td>③ 手机搬出卧室</td><td>原文说这条最简单也最有效，靠物理摩擦而不是意志力</td><td>④ 早起 90 分钟不碰手机</td><td>睡眠不足时早晨更难守，容易连续失败</td></tr>
+  <tr><td><b>一睁眼就被工作消息带着跑</b></td><td>④ 起床先不碰手机（从 10 分钟起）</td><td>守住一天的第一个念头；原文允许从小剂量开始</td><td>⑤ 每周长文</td><td>不解决“日程被别人定义”的问题</td></tr>
+  <tr><td><b>读很多但写不出、说不出观点</b></td><td>② 每天留白 + ⑤ 每周长文</td><td>一个练停在不适里追问，一个练把别人的想法读成自己的判断</td><td>只做 ①</td><td>降刺激有帮助，但不直接产生观点</td></tr>
+  <tr><td><b>做什么都提不起劲，一静就慌</b></td><td>① 吃饭只吃饭</td><td>最小起点，每天至少有一次练习机会</td><td>直接上 30 分钟留白</td><td>前几天的难受接近戒断，起点太大容易放弃</td></tr>
+  <tr><td><b>工作时一卡住就去整理笔记、回消息</b></td><td>⑤ 的三条规则迁移到工作块</td><td>不切走、想查先记、做完再查，正对注意力残留</td><td>单纯关通知</td><td>逃避来自内部的不适，不只是外部打扰</td></tr>
+</table>
+
+<h2>横向对比</h2>
+<table>
+  <tr><th style="width:150px">维度</th><th>“读过”</th><th>“读完”</th></tr>
+  <tr><td><b>阅读方式</b></td><td>碎片、多标签页、边读边查</td><td>一篇从头到尾，想查的先写纸上</td></tr>
+  <tr><td><b>留下什么</b></td><td>别人的结论、收藏夹里的重点</td><td>几天后冒出来的“自己的一句话”</td></tr>
+  <tr><td><b>注意力状态</b></td><td>一直半接不接，带着残留</td><td>完整的一段，不被打断</td></tr>
+  <tr><td><b>原文判断</b></td><td colspan="2">“读过的留在别人嘴里，读完的才长成你的。”</td></tr>
+</table>
+<table>
+  <tr><th style="width:150px">维度</th><th>靠意志力硬撑</th><th>靠环境与摩擦力</th><th>一句话结论</th></tr>
+  <tr><td><b>做法</b></td><td>手机放枕边，“告诉自己别刷”</td><td>手机到房间外充电，门关上</td><td rowspan="4">在决策力最低的时段，不要给自己留选择题；让“做对的事”成为默认值，让“做错的事”多三步路。</td></tr>
+  <tr><td><b>何时最弱</b></td><td>深夜、疲惫、卡住时</td><td>几乎不受状态影响</td></tr>
+  <tr><td><b>破功后</b></td><td>自责，觉得自己“整个烂掉了”</td><td>看清机制，隔天把界线立回去</td></tr>
+  <tr><td><b>原文例子</b></td><td>凌晨一点跟算法比意志力</td><td>闹钟先设好、无屏幕音箱、床边纸质书</td></tr>
+</table>
+
+<h2>避坑清单</h2>
+<div class="grid2">
+  <div class="card r"><h3>把“有理由的输入”当成休息<span class="sev hi">致命</span></h3><p>现象：播客是放松、YouTube 是休息、文章是学习，一天下来没有一段安静。</p><p>原因：每一项单独看都合理，所以从不被计入“输入总量”。</p><div class="do">解法：按原文建议算一次今天的输入；留白时段里，“听着播客散步”不算留白。</div></div>
+  <div class="card r"><h3>一卡住就逃，还觉得自己很高效<span class="sev hi">致命</span></h3><p>现象：工作卡住时去整理笔记、回不急的消息，每件都“有用”。</p><div class="quote">“每件事看起来都有用，所以你不觉得自己在逃。但真正的问题还在原地等你。”</div><div class="do">解法：先给情绪命名，再回到卡住的地方追问一个问题。</div></div>
+  <div class="card o"><h3>跟深夜的自己拼意志力<span class="sev md">小心</span></h3><p>原因：睡前是一天中最累、决策力最低的时段，而最强的入口就在枕边。</p><div class="do">解法：改位置不改决心——手机到房间外充电，闹钟提前设好。</div></div>
+  <div class="card o"><h3>目标一步到位，破功后全盘放弃<span class="sev md">小心</span></h3><p>原因：把 90 分钟当成第一天的分数；或者 5 条同时开始。</p><div class="do">解法：原文说 10 分钟也算数；只挑一条最有感觉的先守住。</div></div>
+  <div class="card s"><h3>把破功全算在自己头上<span class="sev md">小心</span></h3><p>作者自己也最常在睡前那条破功。区别是知道发生了什么：大脑在讨刺激、太累了、把最脆弱的时段交给了最容易上瘾的入口。</p><div class="do">解法：隔天重新把界线立回去，不需要补偿性加码。</div></div>
+  <div class="card s"><h3>把示意图和科普类比当科学结论<span class="sev lo">提醒</span></h3><p>注意力残留的百分比、“一个周末抬高多巴胺基线”都属于示意或类比；引用时说“作者的比喻”比说“研究证明”更准确。</p><div class="do">解法：需要引用时回到 Lembke 原书和 Leroy（2009）原文。</div></div>
+</div>
+
+<div class="end">
+  <h2>结论</h2>
+  <h3>总结</h3>
+  <ol>
+    <li>没有自己的想法，作者认为不是因为读得少，而是一天被输入塞满，没有空档把输入转成自己的判断。</li>
+    <li>刺激叠加抬高了“感觉正常”的门槛，安静和单轨小事因此变得难熬，这是一静就慌的原因。</li>
+    <li>很多输入其实是在逃离不适，而观点恰恰从卡住、不同意、怪怪的感觉里长出来。</li>
+    <li>5 条界线按入口设置：吃饭、白天留白、睡前、早晨、长文阅读；前四条在挡，第五条在练习留下来。</li>
+    <li>靠环境与摩擦力而不是意志力；破功时看清机制，隔天立回去，最终拿回的是判断权。</li>
+  </ol>
+  <h3>行动清单</h3>
+  <ol>
+    <li>今晚把手机充电器挪到卧室门外，并提前设好闹钟。</li>
+    <li>明天午餐把手机收进包里，吃完这一顿；前五分钟的“痒”只观察，不对抗。</li>
+    <li>每天挑一段 15 分钟的走路或洗碗时间，不戴耳机；想拿手机时先说出“我现在想逃”。</li>
+    <li>起床后先给自己 10 分钟：喝水、洗脸，写下一句今天脑子里最吵的事。</li>
+    <li>本周挑一篇收藏已久的长文，关掉其他标签页，旁边放纸笔，读完再查。</li>
+  </ol>
+  <h3>关键认知转变</h3>
+  <p>从“我需要更多材料”变成“我需要空档消化已有的材料”；从“我意志力太差”变成“我把最脆弱的时段交给了最强的入口”；从“逃开不舒服”变成“不舒服的地方，正是自己的想法要冒出来的地方”。</p>
+</div>
+<div class="foot">原文：useyourbrainchn.substack.com/p/5 · 收录 2026-11-11 · 标注“笔者推导”的内容是本笔记基于作者立场的延伸，不是原文观点</div>
+</div>
+    </div>
+  </foreignObject>
+</svg>

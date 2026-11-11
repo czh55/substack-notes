@@ -38,8 +38,9 @@ header .orig{color:var(--ink-3);font-size:15px;margin:0 0 18px}
 .takeaway{background:var(--sheet);border-left:4px solid var(--accent);padding:16px 20px;margin:20px 0 0;border-radius:0 10px 10px 0}
 .takeaway strong{display:block;color:var(--accent);font-size:14px;margin-bottom:4px}
 .takeaway p{margin:0}
-section.chap{margin:64px 0 0;opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
-section.chap.in{opacity:1;transform:none}
+section.chap{margin:64px 0 0}
+.js section.chap{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.js section.chap.in{opacity:1;transform:none}
 .chap .no{font-family:var(--serif);font-size:14px;color:var(--accent);font-weight:700;letter-spacing:.08em}
 .chap h2{font-family:var(--serif);font-size:27px;line-height:1.4;margin:6px 0 4px}
 .chap .orig-h{font-size:13px;color:var(--ink-3);margin:0 0 18px}
@@ -67,10 +68,11 @@ background:linear-gradient(120deg,#1d2733,#2c3a48);color:#fff;text-decoration:no
 footer{margin-top:40px;font-size:13px;color:var(--ink-3);line-height:1.7}
 @media(max-width:640px){.wrap{padding:24px 18px 72px}header h1{font-size:28px}.cover{margin:24px -18px 8px}
 .lede{font-size:17px}.chap h2{font-size:23px}.chap p,.chap ul,.chap ol{font-size:16px}}
-@media(prefers-reduced-motion:reduce){section.chap{opacity:1;transform:none;transition:none}.cover img{animation:none}}
+@media(prefers-reduced-motion:reduce){.js section.chap{opacity:1;transform:none;transition:none}.cover img{animation:none}}
 `;
 
 const REVEAL_JS = `
+if(location.hash)document.querySelectorAll('section.chap').forEach(s=>s.classList.add('in'));
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -10% 0px'});
 document.querySelectorAll('section.chap').forEach(s=>io.observe(s));
 `;
@@ -118,6 +120,7 @@ ${s.blocks.map(renderBlock).join('\n')}
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="description" content="${esc(meta.summary)}">
 <title>${esc(meta.title)}｜精读笔记</title>
+<script>if('IntersectionObserver' in window)document.documentElement.classList.add('js')</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;900&display=swap">
 <style>${CSS}</style>

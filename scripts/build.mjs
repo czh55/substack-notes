@@ -5,7 +5,7 @@
  *   docs/{slug}-理性分析.svg
  *   docs/index.json（按 slug upsert，按 date 倒序）
  *
- * 用法：node scripts/build.mjs <slug> [--html-only|--svg-only]
+ * 用法：node scripts/build.mjs <slug> [--html-only|--svg-only] [--no-index]
  *       node scripts/build.mjs --all
  */
 import fs from 'fs';
@@ -19,7 +19,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DOCS = path.join(ROOT, 'docs');
 const INDEX = path.join(DOCS, 'index.json');
 
-async function buildOne(slug, { html = true, svg = true } = {}) {
+async function buildOne(slug, { html = true, svg = true, index: writeIndex = true } = {}) {
   const file = path.join(ROOT, 'content', `${slug}.mjs`);
   if (!fs.existsSync(file)) throw new Error(`找不到 ${path.relative(ROOT, file)}`);
   const { meta, reading, analysis } = await import(pathToFileURL(file).href + `?t=${Date.now()}`);
@@ -39,6 +39,7 @@ async function buildOne(slug, { html = true, svg = true } = {}) {
     svgHeight = res.height;
     console.log('SVG :', outputs.svg, 'height', svgHeight);
   }
+  if (!writeIndex) return;
 
   const index = fs.existsSync(INDEX) ? JSON.parse(fs.readFileSync(INDEX, 'utf8')) : [];
   const prev = index.find((e) => e.slug === slug);
@@ -60,15 +61,19 @@ async function buildOne(slug, { html = true, svg = true } = {}) {
     svg_height: svgHeight ?? prev?.svg_height ?? null,
     slug,
   };
-  const next = [entry, ...index.filter((e) => e.slug !== slug)].sort((a, b) =>
-    a.date === b.date ? 0 : a.date < b.date ? 1 : -1,
+  const next = [entry, ...index.filter((e) => e.slug !== slug)].sort(
+    (a, b) => b.date.localeCompare(a.date) || (b.post_date || '').localeCompare(a.post_date || ''),
   );
   fs.writeFileSync(INDEX, JSON.stringify(next, null, 2) + '\n', 'utf8');
   console.log('index.json:', next.length, '条');
 }
 
 const args = process.argv.slice(2);
-const opts = { html: !args.includes('--svg-only'), svg: !args.includes('--html-only') };
+const opts = {
+  html: !args.includes('--svg-only'),
+  svg: !args.includes('--html-only'),
+  index: !args.includes('--no-index'),
+};
 const slugs = args.includes('--all')
   ? fs.readdirSync(path.join(ROOT, 'content')).filter((f) => f.endsWith('.mjs')).map((f) => f.replace(/\.mjs$/, ''))
   : args.filter((a) => !a.startsWith('--'));

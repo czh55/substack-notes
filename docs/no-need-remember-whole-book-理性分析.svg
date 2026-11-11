@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="9815" viewBox="0 0 1320 9815">
+  <foreignObject x="0" y="0" width="1320" height="9815">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+*{margin:0;padding:0;box-sizing:border-box}
+.root{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:#1d2733;padding:52px 64px 40px;
+background:#f3f5f7 radial-gradient(circle at 1px 1px,rgba(29,39,51,.06) 1px,transparent 0) 0 0/22px 22px}
+.pub{font-size:14px;letter-spacing:.14em;color:#ff6719;font-weight:800}
+h1{font-family:"Noto Serif SC","Songti SC",serif;font-size:42px;line-height:1.3;font-weight:900;margin:8px 0 6px;color:#1d2733}
+.orig{font-size:15px;color:#7a8490;margin-bottom:14px}
+.tags{margin:6px 0 18px}
+.tag{display:inline-block;padding:4px 12px;border-radius:6px;font-size:13px;font-weight:700;margin:0 8px 6px 0}
+.t-orange{background:#fff1e8;color:#c2410c}.t-teal{background:#e6f4f1;color:#0f766e}.t-slate{background:#e7ebf0;color:#334155}
+.t-blue{background:#e0ecfb;color:#1d4ed8}.t-red{background:#fde8e8;color:#b91c1c}
+.oneline{font-size:19px;line-height:1.75;background:#fff;border-left:5px solid #ff6719;padding:20px 26px;border-radius:0 14px 14px 0;margin-bottom:26px}
+.oneline b{color:#c2410c}
+h2{font-family:"Noto Serif SC","Songti SC",serif;font-size:27px;font-weight:900;color:#1d2733;margin:40px 0 16px;padding-left:14px;border-left:5px solid #0f766e}
+h3{font-size:20px;font-weight:800;color:#1d2733;margin-bottom:10px}
+p{font-size:16px;line-height:1.8;color:#46505c;margin-bottom:8px}
+li{font-size:15.5px;line-height:1.8;color:#46505c;margin-bottom:4px}
+ul,ol{padding-left:22px;margin:6px 0}
+.map{background:#fff;border-radius:18px;padding:30px 32px;box-shadow:0 4px 24px rgba(29,39,51,.06);margin-bottom:22px}
+.flow{display:flex;align-items:stretch;justify-content:space-between;gap:10px}
+.node{flex:1;background:#f6f8fa;border:2px solid #cfd8e3;border-radius:14px;padding:16px 14px;text-align:center}
+.node b{display:block;font-size:17px;color:#1d2733;margin-bottom:6px}
+.node span{font-size:13.5px;color:#5b6672;line-height:1.6;display:block}
+.node.o{background:#fff6f0;border-color:#ffb68a}.node.o b{color:#c2410c}
+.node.g{background:#eef8f6;border-color:#8fd1c4}.node.g b{color:#0f766e}
+.arrow{align-self:center;font-size:24px;color:#9aa5b1;font-weight:700}
+.cap{font-size:14px;color:#7a8490;text-align:center;margin-top:14px}
+.correct{background:#fff;border:2px dashed #ffb68a;border-radius:14px;padding:20px 24px;margin-bottom:12px}
+.correct h3{color:#c2410c}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.card{background:#fff;border-radius:16px;padding:26px 28px;box-shadow:0 4px 22px rgba(29,39,51,.06);border-top:5px solid #0f766e;margin-bottom:18px}
+.card.o{border-top-color:#ff6719}.card.s{border-top-color:#64748b}.card.r{border-top-color:#dc2626}.card.b{border-top-color:#2563eb}
+.lbl{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;color:#7a8490;margin:10px 0 2px}
+.quote{background:#f6f8fa;border-left:4px solid #cbd5e1;padding:10px 14px;border-radius:0 10px 10px 0;font-size:14.5px;color:#5b6672;margin:10px 0}
+.do{background:#eef8f6;border-left:4px solid #0f766e;padding:10px 14px;border-radius:0 10px 10px 0;font-size:15px;color:#134e4a;margin:10px 0}
+.warn{background:#fdf0f0;border-left:4px solid #dc2626;padding:10px 14px;border-radius:0 10px 10px 0;font-size:15px;color:#991b1b;margin:10px 0}
+.edge{background:#fff8eb;border-left:4px solid #f59e0b;padding:10px 14px;border-radius:0 10px 10px 0;font-size:15px;color:#92400e;margin:10px 0}
+.rel{font-size:14px;color:#1d4ed8;background:#eef4fd;padding:8px 12px;border-radius:8px;margin-top:8px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 22px rgba(29,39,51,.06);margin-bottom:18px}
+th{background:#1d2733;color:#fff;font-size:15px;text-align:left;padding:13px 16px;font-weight:700}
+td{font-size:15px;line-height:1.7;color:#46505c;padding:13px 16px;border-bottom:1px solid #e5e9ee;vertical-align:top}
+td b{color:#1d2733}
+tr:nth-child(even) td{background:#fafbfc}
+.lv{display:grid;grid-template-columns:56px 1fr 1.1fr;gap:0;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 22px rgba(29,39,51,.06);margin-bottom:18px}
+.lv div{padding:12px 16px;border-bottom:1px solid #e5e9ee;font-size:15px;line-height:1.65;color:#46505c}
+.lv .n{font-family:"Noto Serif SC",serif;font-weight:900;color:#ff6719;font-size:20px;text-align:center}
+.lv .h{background:#1d2733;color:#fff;font-weight:700}
+.sev{display:inline-block;font-size:12px;font-weight:800;padding:2px 8px;border-radius:5px;margin-left:8px;vertical-align:middle}
+.sev.hi{background:#fde8e8;color:#b91c1c}.sev.md{background:#fff1e8;color:#c2410c}.sev.lo{background:#e7ebf0;color:#475569}
+.end{background:linear-gradient(125deg,#1d2733,#2d3d4d);border-radius:20px;padding:34px 38px;margin-top:40px;color:#fff}
+.end h2{color:#fff;border-left-color:#ff6719;margin-top:0}
+.end h3{color:#ffb68a;margin:20px 0 8px}
+.end p,.end li{color:rgba(255,255,255,.88)}
+.foot{text-align:center;font-size:13px;color:#7a8490;margin-top:26px}
+</style>
+      <div class="root">
+<div class="pub">USE YOUR BRAIN CHN · PRISCILLA HSU · 2026-08-31</div>
+<h1>读书不必记住全部：把一个想法变成下一次的选择</h1>
+<div class="orig">原标题：你不必記住一本書的全部~ · 理性分析</div>
+<div class="tags"><span class="tag t-orange">方法论</span><span class="tag t-teal">阅读方法</span><span class="tag t-teal">知识应用</span><span class="tag t-blue">布鲁姆分类法</span><span class="tag t-slate">设立边界</span></div>
+
+<div class="oneline">本文解决的核心问题是：<b>读完一本书记不住大半时，怎样判断自己“学到了”，以及怎样把一个想法真正用进生活。</b>作者的答案是换掉衡量标准——不看记住多少，看下一次卡住时能否用一个想法做出不同的选择；路径是记得 → 理解 → 分析 → 应用 → 评估 → 改编。</div>
+
+<div class="map">
+  <h3>概念关系图：从“读完就忘”到“留下新证据”</h3>
+  <div class="flow">
+    <div class="node o"><b>读完就忘的焦虑</b><span>“我到底学到没有？”<br/>记得原句，仍照旧反应</span></div>
+    <div class="arrow">→</div>
+    <div class="node"><b>记得 · 理解</b><span>合上书说出大意<br/>说清它处理什么问题</span></div>
+    <div class="arrow">→</div>
+    <div class="node g"><b>分析：拆四格</b><span>已发生 · 脑中猜的<br/>需处理 · 我能做</span></div>
+    <div class="arrow">→</div>
+    <div class="node g"><b>应用：一个动作</b><span>别人看得到的动作<br/>如“六点前确认订座”</span></div>
+    <div class="arrow">→</div>
+    <div class="node"><b>评估 · 改编</b><span>有用吗？适合我吗？<br/>改写成自己的版本</span></div>
+  </div>
+  <div class="flow" style="margin-top:14px">
+    <div class="node o" style="flex:1"><b>前提 · 为什么不必全记</b><span>大脑按眼前目标筛选信息；Shereshevsky 记得极多，却难抓抽象概念和故事重点</span></div>
+    <div class="node" style="flex:1"><b>边界 · 什么还得背</b><span>名字、数字、定义要靠回想练习；分析和使用不能代替准确记忆</span></div>
+    <div class="node g" style="flex:1"><b>结果 · 新证据</b><span>一次选择不改变自我认知，但证明“我不一定照原方式做”；重复选择才累积改变</span></div>
+  </div>
+  <div class="cap">衡量阅读成果的单位，从“记住几句”换成“留下几次不同的选择”；精确记忆与情境应用是两条路，不互相替代</div>
+</div>
+
+<h2>认知纠偏</h2>
+<div class="grid3">
+  <div class="correct"><h3>误解：忘了就是没学到</h3><p>纠偏：记忆本来就会选择，过马路记不住车牌，你也不会怀疑自己没看见。先问读书目的：消遣和满足好奇心不必用出来；想解决问题，记得才只是第一步。</p></div>
+  <div class="correct"><h3>误解：记住了就会用</h3><p>纠偏：辨认（看着眼熟）、回想（说得出大意）、应用（知道它处理什么问题、和眼前有没有关系）是三件事。书里的话省掉了“面对谁、处理什么、能接受什么结果”，要自己补回去。</p></div>
+  <div class="correct"><h3>误解：做到一次就算改变了</h3><p>纠偏：一次拒绝不能证明你已经很会设界线，它只留下一条证据；同样，一次没做到也不证明你做不到。改变来自一次次重复选择。</p></div>
+</div>
+<div class="correct"><h3>原文细节核对</h3><p>正文和文末清单两处把顺序写成“记得、理解、分析、应用”，而原文配图与布鲁姆分类法修订版（Anderson 与 Krathwohl，2001）是“应用”在“分析”之前：记忆、理解、应用、分析、评价、创造。作者把第六层“创造”改称“改编”，并已在文中说明。作者的顺序更贴近“先拆清情况再行动”的实操，照着做没有问题；只是引用分类法原貌时要以修订版为准。另：Shereshevsky 个案作者已自行加了“不能证明照相式记忆”的限定，使用得当。</p></div>
+
+<h2>三个核心概念</h2>
+<div class="grid3">
+  <div class="card">
+    <h3>辨认 vs 回想</h3>
+    <span class="lbl">解决什么问题</span><p>为什么“读过、眼熟”却说不出来、用不上。</p>
+    <span class="lbl">关键理解</span><p>辨认依赖原文提示，回想要自己从脑中取出。参考资料引 Butler（2010）：多次回想比重读更有助于之后想起，也可能帮助把所学用到新问题上。</p>
+    <div class="edge">边界：回想解决“记得准”，不自动解决“用得上”；反过来，作者也明说分析和使用不能代替准确记忆。</div>
+    <div class="rel">关联：就是六步清单的第一步——把书收起来，说出大意。</div>
+  </div>
+  <div class="card b">
+    <h3>情境拆解（四格）</h3>
+    <span class="lbl">解决什么问题</span><p>书里的话是去情境的，直接套用会把猜测当事实、把方向当命令。</p>
+    <span class="lbl">关键理解</span><p>已发生的事 / 脑中猜的事 / 眼前需处理的事 / 我能做的事。原文案例中，Let Them 只能提醒“别急着猜”，不能替你安排时间；四格把“等多久、到时怎么办”拆了出来。</p>
+    <div class="edge">边界：最适合涉及他人不确定反应的情境（等回复、拒绝邀约）。若卡点是技能不足，拆完四格仍需要先补能力。<span class="sev lo">笔者推导</span></div>
+    <div class="rel">关联：对应布鲁姆的“分析”，产出直接喂给“应用”。</div>
+  </div>
+  <div class="card o">
+    <h3>改编：自己的版本</h3>
+    <span class="lbl">解决什么问题</span><p>书里的金句很短、能用在很多地方，所以下次反而想不起具体怎么用。</p>
+    <span class="lbl">关键理解</span><p>加上自己的情况和下一步重写。原文把 Let Them / Let Me 改成“让对方选择要不要回……我决定要等多久，也决定时间到了要怎么安排”——从口号变成带期限、带动作的规则。</p>
+    <div class="edge">边界：改编应发生在至少试过一次、评估过之后；没试过就改写，只是换个说法做摘抄。<span class="sev lo">笔者推导</span></div>
+    <div class="rel">关联：对应布鲁姆修订版的“创造”；改编过的版本最容易在下一次被想起。</div>
+  </div>
+</div>
+
+<h2>方法：读完一本书后的六步</h2>
+<table>
+  <tr><th style="width:54px">步</th><th style="width:250px">做什么（原文）</th><th>在“约饭没回音”案例里（原文）</th><th style="width:250px">常见失误 <span class="sev lo">笔者推导</span></th></tr>
+  <tr><td><b>1</b></td><td><b>记得</b>：把书收起来，说出大意</td><td>想起 Let Them：别人的想法、情绪和选择，不是我能控制的</td><td>翻书找原句，把“看着眼熟”当成记得</td></tr>
+  <tr><td><b>2</b></td><td><b>理解</b>：说出它现在能帮你处理哪个问题</td><td>它提醒我：别急着猜对方是不是生气了</td><td>只会复述，说不出它适用的问题</td></tr>
+  <tr><td><b>3</b></td><td><b>分析</b>：分开已发生的、脑中猜的、真正要处理的</td><td>已发生：两天没回；猜测：生气或不想见；要处理：今晚确认订座；我能做：决定等多久</td><td>把猜测当事实，直接开始内耗</td></tr>
+  <tr><td><b>4</b></td><td><b>应用</b>：选一个别人看得到的动作</td><td>发消息：“我今晚六点前要确认订座。如果你还没回，我就先照自己的安排走。”</td><td>只在心里“放下”，没有任何外部动作</td></tr>
+  <tr><td><b>5</b></td><td><b>评估</b>：情况是否更清楚、是否符合在乎的事</td><td>回头三问：安排更清楚了吗？重视的事说清了吗？下次留哪部分、改哪部分？</td><td>只看对方回没回，用结果好坏评判自己</td></tr>
+  <tr><td><b>6</b></td><td><b>改编</b>：改成下次真的会用的版本</td><td>“让对方选择要不要回。我回到自己在乎的事，决定要等多久……”</td><td>停在书里的原句，下次照样想不起怎么用</td></tr>
+</table>
+<div class="grid2">
+  <div class="card s">
+    <h3>原文给这套步骤划的边界</h3>
+    <p>生活不一定照顺序走，不用全部背熟才开始分析或使用；试的过程本身会让你再次想起意思、把问题说得更清楚。</p>
+    <p>要准确记住名字、数字或定义，还是要练回想。同一做法放到不同的人和情况里，结果可能不一样。</p>
+    <div class="do">落地：六步不是读书时做的，而是“等生活出现相似情况时”做的——读的时候只需挑出一句话。</div>
+  </div>
+  <div class="card s">
+    <h3>原文依据</h3>
+    <div class="quote">“如果你想用一本书解决问题，记得只完成了第一步。”</div>
+    <div class="quote">“书里的话只能带你走到这里。接下来要怎么做，还要看眼前的情况。”</div>
+    <div class="quote">“分析和使用不能代替准确记忆。”</div>
+  </div>
+</div>
+
+<h2>心法：把想法、行动、证据分开看</h2>
+<div class="lv">
+  <div class="h" style="text-align:center">条</div><div class="h">原则（原文）</div><div class="h">怎么查 <span class="sev lo">笔者推导</span></div>
+  <div class="n">1</div><div><b>想法是起点，不会替你下命令</b>：书只给方向，不替你决定</div><div>读到金句时问：它省掉了哪些条件？我的条件是什么？</div>
+  <div class="n">2</div><div><b>一次行动只是小试验</b>：不能立刻证明你是什么样的人</div><div>事后只记录“发生了什么、我做了什么”，不给自己贴成功或失败的标签</div>
+  <div class="n">3</div><div><b>重复选择会留下新证据</b>：一次次选择慢慢改变你怎么看自己</div><div>留一份“不同选择”记录，每次一行：情境、动作、结果</div>
+  <div class="n">4</div><div><b>有用，不一定适合我</b>：评估时问“我愿不愿意这样生活”（作者以信仰为判断标准）</div><div>先写下自己在乎的两三件事，评估时逐条对照</div>
+  <div class="n">5</div><div><b>记得只完成第一步</b>：前提是你想用这本书解决问题</div><div>开读前先定目的：消遣就放松读；解决问题才走六步</div>
+</div>
+<div class="grid2">
+  <div class="card o">
+    <h3>为什么“不必全记”站得住</h3>
+    <p>两条证据：日常里，大脑先注意和眼前目标有关的信息（过马路时车有没有靠近比车牌号重要）；极端个案里，Shereshevsky 记得大量细节，却难以抓住抽象概念和故事重点。</p>
+    <div class="quote">“记得很多细节，也可能没有看懂内容。”</div>
+    <div class="do">配套动作：每本书只带走一个“现在真的用得上”的想法，再往下走。</div>
+  </div>
+  <div class="card r">
+    <h3>适用边界 <span class="sev lo">笔者推导</span></h3>
+    <div class="edge">这套方法针对“想用书解决生活问题”的阅读，尤其是自助、心理、关系类书。考试、专业学习（定义、公式、术语）不适用“只留一个想法”，作者自己也承认精确记忆要靠回想练习。</div>
+    <div class="warn">自助类金句本就去情境化。若拆完四格发现这句话不适合眼前情况，放下它也是一次有效的评估，不必硬套。</div>
+  </div>
+</div>
+
+<h2>选型：读完之后该做什么</h2>
+<table>
+  <tr><th style="width:250px">场景</th><th>推荐</th><th>核心理由</th><th>不推荐</th><th>为什么不行</th></tr>
+  <tr><td><b>读小说、为满足好奇心而读</b></td><td>享受阅读，忘了就忘了</td><td>原文：不需要逼自己把内容用出来</td><td>逐句划线、做应用清单</td><td>把消遣变成任务</td></tr>
+  <tr><td><b>想用一本书解决具体问题（如设界线）</b></td><td>只挑一个想法，等相似情境出现时走六步</td><td>记得只完成第一步（原文）</td><td>读完立刻整理整本书的笔记</td><td>记住很多，相似情况出现时仍照旧反应</td></tr>
+  <tr><td><b>需要准确记住名字、数字、定义</b></td><td>回想练习：合上书说出来、多次回想</td><td>分析和使用不能代替准确记忆（原文）</td><td>指望“用的时候自然会想起”</td><td>精确信息不会因为用过一次就记准</td></tr>
+  <tr><td><b>读完当下懂，过几天想不起</b></td><td>先用一次回想找出漏掉的是哪一段（原文推荐的《读过就忘》）</td><td>定位漏洞比重读全书省力</td><td>从头重读</td><td>重读带来眼熟感，不等于能回想 <span class="sev lo">笔者推导</span></td></tr>
+  <tr><td><b>书里的做法有效，但违背自己在乎的事</b></td><td>评估后改编，或干脆放下</td><td>有用，不一定适合我（原文）</td><td>照原句硬套</td><td>违背价值的做法即使有效也难以持续 <span class="sev lo">笔者推导</span></td></tr>
+</table>
+
+<h2>横向对比</h2>
+<table>
+  <tr><th style="width:150px">维度</th><th>辨认</th><th>回想</th><th>应用 + 改编</th></tr>
+  <tr><td><b>测的是什么</b></td><td>看着原文觉得熟</td><td>不看原文能说出大意</td><td>在具体情境里做出不同的选择</td></tr>
+  <tr><td><b>典型表现</b></td><td>“这句我读过”</td><td>“它讲的是……”</td><td>“所以我六点前发消息”</td></tr>
+  <tr><td><b>能证明什么</b></td><td>接触过</td><td>记住了</td><td>能判断、能行动</td></tr>
+  <tr><td><b>怎么练</b></td><td>重读（最省力，也最容易高估自己）<span class="sev lo">笔者推导</span></td><td>合上书说一遍，隔几天再说一遍</td><td>四格拆解 + 一个可见动作 + 回头三问 + 改写</td></tr>
+</table>
+<table>
+  <tr><th style="width:150px">维度</th><th>以前的作者</th><th>现在的作者</th><th>一句话结论</th></tr>
+  <tr><td><b>触发</b></td><td colspan="2">对方心情不好约她出去；她不想去，也没力气陪伴，一想到拒绝就内疚</td><td rowspan="4">内疚没有消失，变的是“内疚不再自动替她做决定”。一次拒绝不是改变的终点，而是第一条反证。</td></tr>
+  <tr><td><b>反应</b></td><td>勉强答应，只为让内疚和焦虑快点消失</td><td>“我知道你今天很难受，但我今晚需要休息。我们明天再聊。”</td></tr>
+  <tr><td><b>代价</b></td><td>没精力照顾对方，也没力气照顾自己</td><td>对方也许失望，自己可能仍内疚</td></tr>
+  <tr><td><b>留下的</b></td><td>又一次照原方式反应</td><td>新证据：可以感到内疚，也可以保护自己的精力</td></tr>
+</table>
+
+<h2>避坑清单</h2>
+<div class="grid2">
+  <div class="card r"><h3>用“记住多少”衡量读书成败<span class="sev hi">致命</span></h3><p>现象：忘了一句划线句，就怀疑整本书白读。</p><p>原因：把阅读当存档，而大脑本来就按目标筛选信息。</p><div class="quote">“记忆本来就会选择，大脑不会把一天存成一段完整的录像。”</div><div class="do">解法：读完只问一句——我留下了哪一个现在用得上的想法？</div></div>
+  <div class="card r"><h3>把猜测当事实<span class="sev hi">致命</span></h3><p>现象：两天没回消息，就认定“他是不是生气了”。</p><p>原因：情绪先于拆解，书里的话也被拿来替猜测背书。</p><div class="do">解法：先拆四格——已发生、脑中猜的、需处理、我能做，只对后两格行动。</div></div>
+  <div class="card o"><h3>把书里的原句当命令<span class="sev md">小心</span></h3><p>原因：书里的话省掉了“面对谁、处理什么、能接受什么结果”。</p><div class="quote">“一本书可以帮我看到新的选择，但不能替我选。”</div><div class="do">解法：先补条件，再选动作；不合适就改编或放下。</div></div>
+  <div class="card o"><h3>只有心理动作，没有外部动作<span class="sev md">小心</span></h3><p>现象：在心里念“Let Them”，却还是反复打开聊天窗口。</p><p>原因：想法没落到一个具体、有期限的行为上。</p><div class="do">解法：按原文第 4 步，选一个别人看得到的动作，最好带时间点。</div></div>
+  <div class="card s"><h3>用一次结果给自己定性<span class="sev md">小心</span></h3><p>原因：把一次试验当成对“我是谁”的判决。原文：一次拒绝还不能证明已经很会设界线。</p><div class="do">解法：把每次结果当一条证据记下来，看趋势，不看单次。</div></div>
+  <div class="card s"><h3>以为“用过”就能代替精确记忆<span class="sev md">小心</span></h3><p>原因：情境应用让想法更容易回来，但不保证名字、数字、定义记得准。</p><div class="do">解法：需要精确的内容，另做回想练习——合上书说出来，隔几天再说一遍。</div></div>
+</div>
+
+<div class="end">
+  <h2>结论</h2>
+  <h3>总结</h3>
+  <ol>
+    <li>记忆本来就会选择；读书的目标不是存档，而是在下一次卡住时想起一个有用的想法。</li>
+    <li>辨认、回想、应用是三件事：书里的话省掉了条件，要放回眼前的情况里才用得上。</li>
+    <li>六步路径：记得 → 理解 → 分析 → 应用 → 评估 → 改编；不必严格照顺序，但精确记忆仍需回想练习。</li>
+    <li>评估不只看有没有用，还要看适不适合自己、是否符合自己在乎的事。</li>
+    <li>一次不同的选择不等于改变，却是新证据；重复选择才慢慢改变你怎么看自己。</li>
+  </ol>
+  <h3>行动清单</h3>
+  <ol>
+    <li>在正在读的书里只圈一句话，合上书用自己的话说一遍大意。</li>
+    <li>写下它能处理的一个具体问题，例如“对方不回消息时我会内耗”。</li>
+    <li>下次情境出现时，在纸上画四格：已发生 / 脑中猜的 / 需处理 / 我能做。</li>
+    <li>选一个别人看得到、带时间点的动作，例如“六点前确认，没回就按自己的安排走”。</li>
+    <li>事后用三问回顾，把原句改写成一句自己的版本，钉在每天看得到的地方。</li>
+  </ol>
+  <h3>关键认知转变</h3>
+  <p>从“读完要记住”变成“下次卡住时能想起一个想法”；从“书告诉我该怎么做”变成“书给方向，我补条件、做选择”；从“一次做到就算改变”变成“每一次不同的选择都在积累证据”。</p>
+</div>
+<div class="foot">原文：useyourbrainchn.substack.com/p/851 · 收录 2026-11-11 · 标注“笔者推导”的内容是本笔记基于作者立场的延伸，不是原文观点</div>
+</div>
+    </div>
+  </foreignObject>
+</svg>
