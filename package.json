@@ -1,0 +1,16 @@
+{
+  "name": "substack-notes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Substack 文章 → HTML 精读笔记 + SVG 理性分析 → GitHub Pages",
+  "scripts": {
+    "fetch": "node scripts/fetch-substack.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check-simplified.mjs",
+    "serve": "python3 -m http.server 8765 --directory docs"
+  },
+  "dependencies": {
+    "opencc-js": "^1.4.2"
+  }
+}

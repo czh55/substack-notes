@@ -1,0 +1,28 @@
+[
+  {
+    "date": "2026-11-11",
+    "title": "信息过载时，怎么快速学会一个新领域",
+    "original_title": "如何快速學會一個新領域，就算你已經被焦慮淹沒了",
+    "summary": "今天学习的难题不是找不到资料，而是能看的东西太多。作者以自学 Claude Code 时被 YouTube 推荐带偏为引子，给出三套筛选方法：用“缺地图还是缺捷径”决定自学还是买课；把探索和投入分开，按结构、主要概念、细节分层学习，并用五步流程区分趋势与杂讯；用七层可信度筛选器判断谁值得信任，其中最强的一条是“带别人到过你想去的地方”。",
+    "author": "Priscilla Hsu",
+    "publication": "useyourbrainchn",
+    "publication_name": "Use Your Brain CHN",
+    "url": "https://useyourbrainchn.substack.com/p/youtube",
+    "post_date": "2026-04-20",
+    "wordcount": 1683,
+    "primary": "learning",
+    "tags": [
+      "学习方法",
+      "信息筛选",
+      "可信度判断",
+      "AI 学习"
+    ],
+    "cover": "assets/learn-new-field-amid-info-overload/cover.jpg",
+    "outputs": {
+      "html": "learn-new-field-amid-info-overload-精读笔记.html",
+      "svg": "learn-new-field-amid-info-overload-理性分析.svg"
+    },
+    "svg_height": 9338,
+    "slug": "learn-new-field-amid-info-overload"
+  }
+]

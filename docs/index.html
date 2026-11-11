@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Substack 札记 · 每天读一篇，留下能用的判断</title>
+<meta name="description" content="日常 Substack 阅读积累：每篇文章产出一份精读笔记和一张理性分析长图。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;900&display=swap">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#141c24;--ink-2:#46505c;--ink-3:#7a8490;--paper:#f3f5f7;--line:#dde3e9;
+  --accent:#ff6719;--teal:#0f766e;
+  --serif:"Noto Serif SC","Songti SC","STSong",serif;
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);line-height:1.7;
+  background:var(--paper) radial-gradient(circle at 1px 1px,rgba(20,28,36,.07) 1px,transparent 0) 0 0/22px 22px}
+a{color:inherit}
+
+/* ===== Hero：全幅封面 + 品牌 ===== */
+.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden;color:#fff;background:#1b2530}
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.08);
+  animation:drift 18s ease-out forwards}
+.hero::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(14,20,27,.92) 0%,rgba(14,20,27,.72) 42%,rgba(14,20,27,.15) 100%),
+             linear-gradient(0deg,rgba(14,20,27,.85) 0%,transparent 45%)}
+@keyframes drift{to{transform:scale(1)}}
+.hero-inner{position:relative;z-index:1;width:min(1180px,100%);margin:0 auto;padding:0 40px 9vh}
+.brand{font-family:var(--serif);font-weight:900;font-size:clamp(64px,11vw,148px);line-height:.95;letter-spacing:-.02em;
+  opacity:0;transform:translateY(24px);animation:rise .9s .1s cubic-bezier(.2,.7,.2,1) forwards}
+.brand i{font-style:normal;color:var(--accent)}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(22px,2.6vw,32px);margin:22px 0 10px;max-width:640px;
+  opacity:0;transform:translateY(20px);animation:rise .9s .3s cubic-bezier(.2,.7,.2,1) forwards}
+.hero p{font-size:17px;color:rgba(255,255,255,.78);max-width:560px;
+  opacity:0;transform:translateY(20px);animation:rise .9s .45s cubic-bezier(.2,.7,.2,1) forwards}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;
+  opacity:0;transform:translateY(20px);animation:rise .9s .6s cubic-bezier(.2,.7,.2,1) forwards}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:10px;font-weight:700;font-size:16px;text-decoration:none;transition:transform .2s ease,background .2s ease}
+.btn-main{background:var(--accent);color:#fff}
+.btn-main:hover{transform:translateY(-2px);background:#f05a0e}
+.btn-ghost{color:#fff;border:1.5px solid rgba(255,255,255,.45)}
+.btn-ghost:hover{border-color:#fff;transform:translateY(-2px)}
+@keyframes rise{to{opacity:1;transform:none}}
+
+/* ===== 文章列表 ===== */
+.shelf{width:min(1180px,100%);margin:0 auto;padding:88px 40px 120px}
+.shelf-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:28px}
+.shelf-head h2{font-family:var(--serif);font-size:38px;font-weight:900}
+.shelf-head p{color:var(--ink-2);margin-top:4px}
+.search{width:min(320px,100%);padding:12px 16px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:15px;background:#fff;color:var(--ink);outline:none;transition:border-color .2s}
+.search:focus{border-color:var(--accent)}
+.month{font-family:var(--serif);font-size:15px;font-weight:600;color:var(--ink-3);letter-spacing:.1em;margin:44px 0 6px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+.row{display:grid;grid-template-columns:200px 1fr 220px;gap:32px;padding:30px 0;border-bottom:1px solid var(--line);
+  opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.row.in{opacity:1;transform:none}
+.row .thumb{display:block;aspect-ratio:16/10;border-radius:10px;overflow:hidden;background:#dfe5eb}
+.row .thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.row:hover .thumb img{transform:scale(1.05)}
+.row .pub{font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--accent)}
+.row h3{font-family:var(--serif);font-size:25px;line-height:1.4;margin:4px 0 8px}
+.row h3 a{text-decoration:none;background:linear-gradient(var(--accent),var(--accent)) 0 100%/0 2px no-repeat;transition:background-size .35s ease}
+.row h3 a:hover{background-size:100% 2px}
+.row .sum{color:var(--ink-2);font-size:15px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.row .by{font-size:13px;color:var(--ink-3);margin-top:10px}
+.row .go{display:flex;flex-direction:column;gap:10px;justify-content:center}
+.row .go a{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border:1.5px solid var(--line);border-radius:10px;text-decoration:none;font-weight:600;font-size:15px;background:#fff;transition:border-color .2s,color .2s}
+.row .go a span{transition:transform .25s ease}
+.row .go a:hover{border-color:var(--ink);}
+.row .go a:hover span{transform:translateX(4px)}
+.row .go a.svg:hover{border-color:var(--teal);color:var(--teal)}
+.empty{padding:60px 0;color:var(--ink-3);text-align:center}
+footer{border-top:1px solid var(--line);padding:32px 40px;text-align:center;font-size:13px;color:var(--ink-3)}
+
+@media(max-width:860px){
+  .hero{min-height:86vh}
+  .hero-inner{padding:0 22px 8vh}
+  .hero::after{background:linear-gradient(0deg,rgba(14,20,27,.95) 0%,rgba(14,20,27,.55) 60%,rgba(14,20,27,.35) 100%)}
+  .shelf{padding:64px 22px 96px}
+  .row{grid-template-columns:1fr;gap:16px}
+  .row .go{flex-direction:row}.row .go a{flex:1}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-bg,.brand,.hero h1,.hero p,.cta{animation:none;opacity:1;transform:none}
+  .row{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-inner">
+    <div class="brand">Substack<br><i>札记</i></div>
+    <h1>每天读一篇，留下能用的判断。</h1>
+    <p>每篇 Substack 文章产出两份笔记：按原文脉络复述的精读笔记，和一张拆出关系、对比、避坑与行动的理性分析长图。</p>
+    <div class="cta">
+      <a class="btn btn-main" id="latestLink" href="#shelf">读最新一篇 →</a>
+      <a class="btn btn-ghost" href="#shelf">全部文章</a>
+    </div>
+  </div>
+</header>
+
+<main class="shelf" id="shelf">
+  <div class="shelf-head">
+    <div>
+      <h2>阅读书架</h2>
+      <p id="count">加载中…</p>
+    </div>
+    <input class="search" id="q" type="search" placeholder="搜标题、作者、标签…" aria-label="搜索文章">
+  </div>
+  <div id="list"></div>
+</main>
+<footer>笔记为个人学习用途，引文已转为简体中文，版权归原作者所有 · 数据来自 <a href="index.json">index.json</a></footer>
+
+<script>
+const esc = (s = '') => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+let all = [];
+
+const io = new IntersectionObserver((es) => es.forEach((e) => {
+  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}), { rootMargin: '0px 0px -8% 0px' });
+
+function render(items) {
+  const list = document.getElementById('list');
+  if (!items.length) { list.innerHTML = '<div class="empty">没有匹配的文章</div>'; return; }
+  let html = '', month = '';
+  for (const e of items) {
+    const m = e.date.slice(0, 7);
+    if (m !== month) { month = m; html += `<div class="month">${m.replace('-', ' 年 ')} 月</div>`; }
+    html += `<article class="row">
+      <a class="thumb" href="${esc(e.outputs.html)}">${e.cover ? `<img src="${esc(e.cover)}" alt="" loading="lazy">` : ''}</a>
+      <div>
+        <div class="pub">${esc(e.publication_name || e.publication)}</div>
+        <h3><a href="${esc(e.outputs.html)}">${esc(e.title)}</a></h3>
+        <p class="sum">${esc(e.summary)}</p>
+        <div class="by">${esc(e.author)} · 原文发布 ${esc(e.post_date)} · 收录 ${esc(e.date)} · ${esc((e.tags || []).join(' / '))}</div>
+      </div>
+      <div class="go">
+        <a href="${esc(e.outputs.html)}">精读笔记 <span>→</span></a>
+        <a class="svg" href="${esc(e.outputs.svg)}">理性分析 <span>→</span></a>
+      </div>
+    </article>`;
+  }
+  list.innerHTML = html;
+  list.querySelectorAll('.row').forEach((r, i) => { r.style.transitionDelay = `${Math.min(i, 6) * 60}ms`; io.observe(r); });
+}
+
+fetch('index.json').then((r) => r.json()).then((data) => {
+  all = data.filter((e) => !e.error);
+  document.getElementById('count').textContent = `已收录 ${all.length} 篇 · 来自 ${new Set(all.map((e) => e.publication)).size} 个 Substack`;
+  if (all[0]) {
+    document.getElementById('latestLink').href = all[0].outputs.html;
+    if (all[0].cover) document.getElementById('heroBg').style.backgroundImage = `url("${all[0].cover}")`;
+  }
+  render(all);
+}).catch(() => { document.getElementById('count').textContent = '索引加载失败'; });
+
+document.getElementById('q').addEventListener('input', (ev) => {
+  const q = ev.target.value.trim().toLowerCase();
+  render(!q ? all : all.filter((e) =>
+    [e.title, e.original_title, e.author, e.publication_name, e.summary, ...(e.tags || [])].join(' ').toLowerCase().includes(q)));
+});
+</script>
+</body>
+</html>
